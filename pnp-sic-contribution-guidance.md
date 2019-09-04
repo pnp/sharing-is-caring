@@ -1,7 +1,7 @@
 ![SharePoint Patterns and Practices](https://devofficecdn.azureedge.net/media/Default/PnP/sppnp.png)
 # Sharing-Is-Caring Contribution Guidance Opportunities
 
-## First time PnP Contribution
+## --First time PnP Contribution--
 Contributing to the OfficeDevPnP for the first time may seem intimidating, but is actually quite simple. In fact the only requirements are a free GitHub account and a web browser. 
 
 Personal and hands-on guidance is available to you for completing your very first OfficeDevPnP contribution. 
@@ -12,7 +12,7 @@ The following Sharing-Is-Caring first time contribution tutorial is available:
 
 ### Monthly hands-on tutorial
 Each month, a pre-scheduled, live hands-on tutorial session will be available for first time OfficeDevPnP contributions. 
-NOTE: Additional sessions may be added based on demand
+<i>NOTE: Additional sessions may be added based on demand</i>
 
 **The session will provide the following hands-on experience for each attendee:**
 * SharePoint development documentation updates using GitHub
@@ -27,7 +27,7 @@ NOTE: Additional sessions may be added based on demand
 To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser for the next session using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com) registration form.
 
 
-## PnP Code Sample Contribution 
+## --PnP Code Sample Contribution--
 
 ### (Web Part, Extension, List Formatting Definition, Etc.)
 Contributing a code sample to the OfficeDevPnP can be more complex then a first time documentation contribution, but it is not something to be afraid of. In addition to the requirements of a first time contribution (GitHub account & a web browser), the only additional requirement is the installation of [VSCode](https://code.visualstudio.com/).
@@ -51,7 +51,7 @@ Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP
 
 **The schedule and registration options for PnP Code Sample Contribution tutorials will be available soon**
 
-## PnP SPFx Sample Updates Contribution using the Office365 CLI
+## --PnP SPFx Sample Updates Contribution using the Office365 CLI--
 
 ### Upgrading SPFx Samples with the Office365 CLI "Project Upgrade" Command
 If you would like to contribute to the SPFx PnP initiatives, but don't yet have any of your own custom samples, there is still an opportunity to contribute. Existing samples, which have been created and submitted using an older version of SPFx, can be upgraded to the newest version of SPFx using the "Project Upgrade" with the [Office365 CLI](https://pnp.github.io/office365-cli/). The updated sample can then be submitted back into the original sample PnP repository using a GitHub pull request. 
