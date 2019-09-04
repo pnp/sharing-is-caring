@@ -43,7 +43,7 @@ Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP
 * Understanding of the OfficeDevPnP sample code contribution pull request process, including providing a useful and accurate pull request description. 
 * For each attendee, a personalized SPFx sample will be prepared, allowing all attending to experience the pull request process, from start to finish. 
 
-Session Requirements:
+**Session Requirements:**
 * Free GitHub account
 * Web Browser
 * Visual Studio Code
@@ -52,9 +52,30 @@ Session Requirements:
 
 ## PnP SPFx Sample Updates Contribution using the Office365 CLI
 
-### Upgrading SPFx Samples with the Office365 "Project Upgrade" Command
-If you would like to contribute to the SPFx PnP initiatives, but don't yet have any of your own custom samples, there is still an opportunity to contribute. Existing samples, which have been created and submitted using an older version of SPFx, can be upgraded to the newest version of SPFx using the "Project Upgrade" with the Office365 CLI. The updated sample can then be submitted back into the original sample PnP repository using a GitHub pull request. 
+### Upgrading SPFx Samples with the Office365 CLI "Project Upgrade" Command
+If you would like to contribute to the SPFx PnP initiatives, but don't yet have any of your own custom samples, there is still an opportunity to contribute. Existing samples, which have been created and submitted using an older version of SPFx, can be upgraded to the newest version of SPFx using the "Project Upgrade" with the [Office365 CLI](https://pnp.github.io/office365-cli/). The updated sample can then be submitted back into the original sample PnP repository using a GitHub pull request. 
 
 A sample upgrade contribution helps by keeping the SPFx samples updated and counts as an official PnP contribution.
 
 The following Sharing-Is-Caring Code Sample contribution tutorials are available:
+
+### Monthly hands-on tutorial
+Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP sample code contributions. 
+
+**The session will provide the following hands-on experience for each attendee:**
+* Forking & Cloning of the SPFx sample repositories
+*
+* Updating an existing sample
+* SharePoint SPFx sample contribution using GitHub & Visual Studio Code
+* GitHub repository forking into personal GitHub account
+* Submitting an updated sample using a GitHub pull request within Visual Studio Code
+* Understanding of the OfficeDevPnP sample code contribution pull request process, including providing a useful and accurate pull request description. 
+* For each attendee, a personalized SPFx upgradeable sample will be prepared, allowing all attending to experience the Office365 CLI Project Upgrade command and the pull request process to update the sample, from start to finish. 
+
+**Session Requirements:**
+* [SharePoint Framework Development Environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
+* Free GitHub account
+* Web Browser
+* Visual Studio Code
+
+**The schedule and registration options for PnP SPFx Sample Updates Contribution using the Office365 CLI tutorials will be available soon**
