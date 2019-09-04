@@ -8,10 +8,11 @@ Personal and hands-on guidance is available to you for completing your very firs
 
 The Sharing-Is-Caring repository provides the opportunity to walk you through, from start to finish, your first OfficeDevPnP pull request and the tutorial contribution will even count as an official contribution, placing your name on the contributor list for that month! 
 
-The following Sharing-Is-Caring first time contribution tutorials are available:
+The following Sharing-Is-Caring first time contribution tutorial is available:
 
 ### Monthly hands-on tutorial
 Each month, a pre-scheduled, live hands-on tutorial session will be available for first time OfficeDevPnP contributions. 
+NOTE: Additional sessions may be added based on demand
 
 **The session will provide the following hands-on experience for each attendee:**
 * SharePoint development documentation updates using GitHub
@@ -23,7 +24,7 @@ Each month, a pre-scheduled, live hands-on tutorial session will be available fo
 * Free GitHub account
 * Web Browser
 
-To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com) registration form.
+To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser for the next session using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com) registration form.
 
 
 ## PnP Code Sample Contribution 
@@ -31,7 +32,7 @@ To attend the next Sharing-Is-Caring First Time PnP Contribution training sessio
 ### (Web Part, Extension, List Formatting Definition, Etc.)
 Contributing a code sample to the OfficeDevPnP can be more complex then a first time documentation contribution, but it is not something to be afraid of. In addition to the requirements of a first time contribution (GitHub account & a web browser), the only additional requirement is the installation of [VSCode](https://code.visualstudio.com/).
 
-The following Sharing-Is-Caring Code Sample contribution tutorials are available:
+The following Sharing-Is-Caring Code Sample contribution tutorial is available:
 
 ### Monthly hands-on tutorial
 Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP sample code contributions. 
@@ -64,9 +65,8 @@ Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP
 
 **The session will provide the following hands-on experience for each attendee:**
 * Forking & Cloning of the SPFx sample repositories
-*
-* Updating an existing sample
-* SharePoint SPFx sample contribution using GitHub & Visual Studio Code
+* Updating an existing sample using the Office365 CLI
+* SharePoint SPFx updated sample contribution using GitHub & Visual Studio Code
 * GitHub repository forking into personal GitHub account
 * Submitting an updated sample using a GitHub pull request within Visual Studio Code
 * Understanding of the OfficeDevPnP sample code contribution pull request process, including providing a useful and accurate pull request description. 
