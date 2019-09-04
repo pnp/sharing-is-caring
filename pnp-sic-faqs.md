@@ -4,8 +4,10 @@
 
 ## What is the purpose of the “sharing-is-caring” repository?
 
+## I’m not a developer, but I would like to contribute. Are there ways I can still help?
+
 ## Do I need to use VSCode or any other code editor to contribute to the PnP Initiative?
 
-## I’m not a developer, but I would like to contribute. Are there ways I can still help?
+
 
 
