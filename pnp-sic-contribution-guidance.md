@@ -4,13 +4,13 @@
 ## First time PnP Contribution
 Contributing to the OfficeDevPnP for the first time may seem intimidating, but is actually quite simple. In fact the only requirements are a free GitHub account and a web browser. 
 
-Personal and hands-on guidance is available to you in making your very first OfficeDevPnP contribution. 
+Personal and hands-on guidance is available to you for completing your very first OfficeDevPnP contribution. 
 
 The Sharing-Is-Caring repository provides the opportunity to walk you through, from start to finish, your first OfficeDevPnP pull request and it even counts as an official contribution, putting your name on the contributor list for that month! 
 
 The following hands-on Sharing-Is-Caring tutorials are available:
 
-### Monthly scheduled live & hands-on tutorial
+### Monthly scheduled live, hands-on tutorial
 Each month, a pre-scheduled, live hands-on session is available for first time OfficeDevPnP contributions. 
 
 **The session will provide the following hands-on experience for each attendee:**
@@ -22,6 +22,8 @@ Each month, a pre-scheduled, live hands-on session is available for first time O
 Session Requirements:
 * Free GitHub account
 * Web Browser
+
+To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com) registration form.
 
 
 ## PnP Code Sample Contribution 
