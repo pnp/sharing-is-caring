@@ -1,3 +1,5 @@
+![SharePoint Patterns and Practices](https://devofficecdn.azureedge.net/media/Default/PnP/sppnp.png)
+
 # Sharing-Is-Caring Initiatives
 Targeted for learning the basics around submitting PRs and making changes in GitHub
 
