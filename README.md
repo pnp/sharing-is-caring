@@ -8,11 +8,11 @@ Are you looking to contribute to the OfficeDevPnP community for the first time? 
 
 Personal & hands-on assistance is here for YOU! 
 
-Click here to learn more about the different resources/options available to provide you experience with the contribution process. 
+[Click here](pnp-sic-contribution-guidance.md) to learn more about the different resources/options available to provide you experience with the contribution process. 
 
 
 ## PnP Contribution Challenge Rewards
-
+More Information Coming Soon!
 
 
 
