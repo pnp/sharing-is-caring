@@ -1,15 +1,11 @@
 ![SharePoint Patterns and Practices](https://devofficecdn.azureedge.net/media/Default/PnP/sppnp.png)
 
+# Sharing-Is-Caring Contribution Guidance FAQ’s
+
 ## What is the purpose of the “sharing-is-caring” repository?
 
-## Sharing-Is-Caring Contribution Guidance Category Opportunities. 
+## Do I need to use VSCode or any other code editor to contribute to the PnP Initiative?
 
-### First time PnP Contribution
+## I’m not a developer, but I would like to contribute. Are there ways I can still help?
 
-## Sharing-Is-Caring Contribution Guidance FAQ’s
 
-### Do I need to use VSCode or any other code editor to contribute to the PnP Initiative?
-
-### I’m not a developer, but I would like to contribute. Are there ways I can still help?
-
-##
