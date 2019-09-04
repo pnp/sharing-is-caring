@@ -6,12 +6,12 @@ Contributing to the OfficeDevPnP for the first time may seem intimidating, but i
 
 Personal and hands-on guidance is available to you for completing your very first OfficeDevPnP contribution. 
 
-The Sharing-Is-Caring repository provides the opportunity to walk you through, from start to finish, your first OfficeDevPnP pull request and the contribution tutorial will even count as an official contribution, placing your name on the contributor list for that month! 
+The Sharing-Is-Caring repository provides the opportunity to walk you through, from start to finish, your first OfficeDevPnP pull request and the tutorial contribution will even count as an official contribution, placing your name on the contributor list for that month! 
 
 The following Sharing-Is-Caring first time contribution tutorials are available:
 
-### Monthly scheduled live, hands-on tutorial
-Each month, a pre-scheduled, live hands-on session is available for first time OfficeDevPnP contributions. 
+### Monthly hands-on tutorial
+Each month, a pre-scheduled, live hands-on tutorial session will be available for first time OfficeDevPnP contributions. 
 
 **The session will provide the following hands-on experience for each attendee:**
 * SharePoint development documentation updates using GitHub
@@ -19,7 +19,7 @@ Each month, a pre-scheduled, live hands-on session is available for first time O
 * Understanding of the OfficeDevPnP pull request process, including providing a useful and accurate pull request description. 
 * For each attendee, a personalized documentation update will be prepared, allowing all attending to experience the pull request process, from start to finish. 
 
-Session Requirements:
+**Session Requirements:**
 * Free GitHub account
 * Web Browser
 
@@ -33,23 +33,28 @@ Contributing a code sample to the OfficeDevPnP can be more complex then a first 
 
 The following Sharing-Is-Caring Code Sample contribution tutorials are available:
 
-### Monthly scheduled live, hands-on tutorial
+### Monthly hands-on tutorial
 Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP sample code contributions. 
 
 **The session will provide the following hands-on experience for each attendee:**
-* SharePoint development documentation updates using GitHub
-* Submitting documentation updates such as spelling and grammar corrections with a GitHub pull request
-* Understanding of the OfficeDevPnP pull request process, including providing a useful and accurate pull request description. 
-* For each attendee, a personalized documentation update will be prepared, allowing all attending to experience the pull request process, from start to finish. 
+* SharePoint SPFx sample contribution using GitHub & Visual Studio Code
+* GitHub repository forking into personal GitHub account
+* Submitting a new sample using a GitHub pull request within Visual Studio Code
+* Understanding of the OfficeDevPnP sample code contribution pull request process, including providing a useful and accurate pull request description. 
+* For each attendee, a personalized SPFx sample will be prepared, allowing all attending to experience the pull request process, from start to finish. 
 
 Session Requirements:
 * Free GitHub account
 * Web Browser
 * Visual Studio Code
 
+**The schedule and registration options for PnP Code Sample Contribution tutorials will be available soon**
+
 ## PnP SPFx Sample Updates Contribution using the Office365 CLI
 
 ### Upgrading SPFx Samples with the Office365 "Project Upgrade" Command
-If you would like to contribute to the SPFx PnP initiatives, but don't have any of your own custom samples, there is still an opportunity to contribute. Existing 
+If you would like to contribute to the SPFx PnP initiatives, but don't yet have any of your own custom samples, there is still an opportunity to contribute. Existing samples, which have been created and submitted using an older version of SPFx, can be upgraded to the newest version of SPFx using the "Project Upgrade" with the Office365 CLI. The updated sample can then be submitted back into the original sample PnP repository using a GitHub pull request. 
+
+A sample upgrade contribution helps by keeping the SPFx samples updated and counts as an official PnP contribution.
 
 The following Sharing-Is-Caring Code Sample contribution tutorials are available:
