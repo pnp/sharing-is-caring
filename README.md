@@ -2,7 +2,7 @@
 Targeted for learning the basics around submitting PRs and making changes in GitHub
 
 ## PnP Contribution Guidance & Assistance
-Looking to contribute to the OfficeDev PnP community for the first time? Have a fantastic sample you would like to contribute to the community, such as a web part, extension or list formatting definition, but are unfamiliar or intimidated by the GitHub pull request process?
+Are you looking to contribute to the OfficeDevPnP community for the first time? Have a fantastic sample you would like to contribute to the community, such as a web part, extension or list formatting definition, but are unfamiliar or intimidated by the GitHub pull request process?
 
 Personal & hands-on assistance is here for YOU! 
 
