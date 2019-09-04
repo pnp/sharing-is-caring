@@ -25,6 +25,7 @@ Each month, a pre-scheduled, live hands-on tutorial session will be available fo
 * Web Browser
 
 To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser for the next session using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com) registration form.
+**FOR VESA NOTE: This could be a link to an issue in the issue list or a page, for each scheduled event, allowing interested ones to comment on wanting to join the session. The challenge is getting their contact information in a more private manner to send the invite for, which is why I started with an Office Forms form. **
 
 
 ## -- PnP Code Sample Contribution --
