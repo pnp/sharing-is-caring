@@ -30,7 +30,7 @@ To attend the next Sharing-Is-Caring First Time PnP Contribution training sessio
 
 ## -- PnP Code Sample Contribution --
 
-### (Web Part, Extension, List Formatting Definition, Etc.)
+### (SPFx Web Part, SPFx Extension, SPFx Library Component, List Formatting Definition, Etc.)
 Contributing a code sample to the OfficeDevPnP can be more complex then a first time documentation contribution, but it is not something to be afraid of. In addition to the requirements of a first time contribution (GitHub account & a web browser), the only additional requirement is the installation of [VSCode](https://code.visualstudio.com/).
 
 The following Sharing-Is-Caring Code Sample contribution tutorial is available:
