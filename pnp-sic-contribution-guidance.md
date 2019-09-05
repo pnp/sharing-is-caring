@@ -25,14 +25,12 @@ Each month, a pre-scheduled, live hands-on tutorial session will be available fo
 * Web Browser
 
 To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser for the next session using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com) registration form.<BR>
-  
-**FOR VESA NOTE: This could be a link to an issue in the issue list or a page, for each scheduled event, allowing interested ones to comment on wanting to join the session. The challenge is getting their contact information in a more private manner to send the invite for, which is why I started with an Office Forms form. **
 
 
 ## -- PnP Code Sample Contribution --
 
 ### (SPFx Web Part, SPFx Extension, SPFx Library Component, List Formatting Definition, Etc.)
-Contributing a code sample to the OfficeDevPnP can be more complex then a first time documentation contribution, but it is not something to be afraid of. In addition to the requirements of a first time contribution (GitHub account & a web browser), the only additional requirement is the installation of [VSCode](https://code.visualstudio.com/).
+Contributing a code sample to the OfficeDevPnP can be more complex then a first time documentation contribution, but it is nothing to be afraid of. In addition to the requirements of a first time contribution (GitHub account & a web browser), the only additional requirement is the installation of [VSCode](https://code.visualstudio.com/).
 
 The following Sharing-Is-Caring Code Sample contribution tutorial is available:
 
@@ -43,7 +41,7 @@ Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP
 * GitHub SPFx samples repository forking into personal GitHub account and cloning to your local development environment
 * Committing SPFx sample to personal GitHub forked repository using Visual Studio Code
 * Submitting a new sample using a GitHub pull request
-* Understanding of the OfficeDevPnP sample code contribution pull request process, including providing a useful and accurate pull request description. 
+* Understanding of the OfficeDevPnP sample code contribution pull request process, including how to provide a useful and accurate pull request description. 
 * For each attendee, a personalized SPFx sample will be prepared, allowing all attending to experience the pull request process, from start to finish. 
 
 **Session Requirements:**
@@ -70,7 +68,7 @@ Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP
 * Updating an existing sample using the Office365 CLI
 * Committing SPFx sample to personal GitHub forked repository using Visual Studio Code
 * Submitting the updated sample using a GitHub pull request
-* Understanding of the OfficeDevPnP sample code contribution pull request process, including providing a useful and accurate pull request description. 
+* Understanding of the OfficeDevPnP sample code contribution pull request process, including how to provide a useful and accurate pull request description. 
 * For each attendee, a personalized SPFx upgradeable sample will be prepared, allowing all attending to experience the Office365 CLI Project Upgrade command and the pull request process to update the sample, from start to finish. 
 
 **Session Requirements:**
