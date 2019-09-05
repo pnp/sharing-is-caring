@@ -9,7 +9,7 @@ Personal and hands-on guidance is available to you for completing your very firs
 The Sharing-Is-Caring repository provides the opportunity to walk you through, from start to finish, your first OfficeDevPnP pull request and the tutorial contribution will even count as an official contribution, placing your name on the contributor list for that month! 
 
 ### Monthly hands-on tutorial
-Each month, a pre-scheduled, live hands-on tutorial session will be available for first time OfficeDevPnP contributions. 
+Each month, a pre-scheduled, live hands-on tutorial session will be available for first time OfficeDevPnP contributions.<br> 
 <i>NOTE: Additional sessions may be added based on demand</i>
 
 **The session will provide the following hands-on experience for each attendee:**
