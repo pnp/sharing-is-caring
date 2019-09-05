@@ -40,7 +40,7 @@ Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP
 **The session will provide the following hands-on experience for each attendee:**
 * GitHub SPFx samples repository forking into personal GitHub account and cloning to your local development environment
 * Committing SPFx sample to personal GitHub forked repository using Visual Studio Code
-* Submitting a new sample using a GitHub pull request
+* Submitting the new sample using a GitHub pull request
 * Understanding of the OfficeDevPnP sample code contribution pull request process, including how to provide a useful and accurate pull request description. 
 * For each attendee, a personalized SPFx sample will be prepared, allowing all attending to experience the pull request process, from start to finish. 
 
@@ -66,7 +66,7 @@ Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP
 **The session will provide the following hands-on experience for each attendee:**
 * GitHub SPFx samples repository forking into personal GitHub account and cloning to your local development environment
 * Updating an existing sample using the Office365 CLI
-* Committing SPFx sample to personal GitHub forked repository using Visual Studio Code
+* Committing updated SPFx sample to personal GitHub forked repository using Visual Studio Code
 * Submitting the updated sample using a GitHub pull request
 * Understanding of the OfficeDevPnP sample code contribution pull request process, including how to provide a useful and accurate pull request description. 
 * For each attendee, a personalized SPFx upgradeable sample will be prepared, allowing all attending to experience the Office365 CLI Project Upgrade command and the pull request process to update the sample, from start to finish. 
