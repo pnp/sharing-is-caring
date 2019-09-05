@@ -40,9 +40,9 @@ The following Sharing-Is-Caring Code Sample contribution tutorial is available:
 Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP sample code contributions. 
 
 **The session will provide the following hands-on experience for each attendee:**
-* SharePoint SPFx sample contribution using GitHub & Visual Studio Code
-* GitHub repository forking into personal GitHub account
-* Submitting a new sample using a GitHub pull request within Visual Studio Code
+* GitHub SPFx samples repository forking into personal GitHub account and cloning to your local development environment
+* Committing SPFx sample to personal GitHub forked repository using Visual Studio Code
+* Submitting a new sample using a GitHub pull request
 * Understanding of the OfficeDevPnP sample code contribution pull request process, including providing a useful and accurate pull request description. 
 * For each attendee, a personalized SPFx sample will be prepared, allowing all attending to experience the pull request process, from start to finish. 
 
@@ -66,11 +66,10 @@ The following Sharing-Is-Caring Code Sample contribution tutorials are available
 Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP sample code contributions. 
 
 **The session will provide the following hands-on experience for each attendee:**
-* Forking & Cloning of the SPFx sample repositories
+* GitHub SPFx samples repository forking into personal GitHub account and cloning to your local development environment
 * Updating an existing sample using the Office365 CLI
-* SharePoint SPFx updated sample contribution using GitHub & Visual Studio Code
-* GitHub repository forking into personal GitHub account
-* Submitting an updated sample using a GitHub pull request within Visual Studio Code
+* Committing SPFx sample to personal GitHub forked repository using Visual Studio Code
+* Submitting the updated sample using a GitHub pull request
 * Understanding of the OfficeDevPnP sample code contribution pull request process, including providing a useful and accurate pull request description. 
 * For each attendee, a personalized SPFx upgradeable sample will be prepared, allowing all attending to experience the Office365 CLI Project Upgrade command and the pull request process to update the sample, from start to finish. 
 
