@@ -24,7 +24,7 @@ Each month, a pre-scheduled, live hands-on tutorial session will be available fo
 * Free GitHub account
 * Web Browser
 
-To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser for the next session using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com) registration form.<BR>
+To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser for the next session using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com/Pages/ResponsePage.aspx?id=P4W00MjlVkqb2oRWF2ZrgX11OyUhMWtHhZR7nphQCrdUNjc4NkdGUzZETElaUThNV0JZVVZXQzdOTC4u) registration form.<BR>
 
 
 ## -- PnP Code Sample Contribution --
