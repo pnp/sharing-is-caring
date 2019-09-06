@@ -22,7 +22,7 @@ Each month, a pre-scheduled, live hands-on tutorial session will be available fo
 * Free GitHub account
 * Web Browser
 
-To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please regiser for the next session using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com/Pages/ResponsePage.aspx?id=P4W00MjlVkqb2oRWF2ZrgX11OyUhMWtHhZR7nphQCrdUNjc4NkdGUzZETElaUThNV0JZVVZXQzdOTC4u) registration form.<BR>
+To attend the next Sharing-Is-Caring First Time PnP Contribution training session, please register for the next session using the [Sharing-Is-Caring first PnP contribution](https://forms.office.com/Pages/ResponsePage.aspx?id=P4W00MjlVkqb2oRWF2ZrgX11OyUhMWtHhZR7nphQCrdUNjc4NkdGUzZETElaUThNV0JZVVZXQzdOTC4u) registration form.<BR>
 
 
 ## -- PnP Code Sample Contribution --
@@ -63,7 +63,7 @@ Each month, a pre-scheduled, live hands-on session is available for OfficeDevPnP
 * Committing updated SPFx sample to personal GitHub forked repository using Visual Studio Code
 * Submitting the updated sample using a GitHub pull request
 * Understanding of the OfficeDevPnP sample code contribution pull request process, including how to provide a useful and accurate pull request description. 
-* For each attendee, a personalized SPFx upgradeable sample will be prepared, allowing all attending to experience the Office365 CLI Project Upgrade command and the pull request process to update the sample, from start to finish. 
+* For each attendee, a personalized SPFx upgrade ready sample will be prepared, allowing all attending to experience the Office365 CLI Project Upgrade command and the pull request process to update the sample, from start to finish. 
 
 **Session Requirements:**
 * [SharePoint Framework Development Environment](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment)
