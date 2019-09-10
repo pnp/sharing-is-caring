@@ -1,4 +1,4 @@
-![SharePoint Patterns and Practices](https://devofficecdn.azureedge.net/media/Default/PnP/sppnp.png)
+![SharePoint Patterns and Practices](https://github.com/pnp/sharing-is-caring/blob/master/assets/SharePoint_PnP_logo_fullcolor%402x.png)
 # Sharing-Is-Caring Contribution Guidance Opportunities
 
 ## -- First time PnP Contribution --
