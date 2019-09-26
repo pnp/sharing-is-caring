@@ -1,0 +1,38 @@
+site_name: Sharing is Caring
+theme: readthedocs
+plugins:
+    - search
+    - macros
+    - markdownextradata
+theme:
+  name: 'material'
+  palette:
+    primary: 'teal'
+    accent: 'indigo'
+  logo: 'img/pnp-training-white.svg'
+  feature:
+    tabs: true
+extra_css:
+  - 'css/extra.css'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+extra:
+  version: '1.0.0-0'
+  social:
+    - type: 'twitter'
+      link: 'https://twitter.com/officedevpnp'
+    - type: 'youtube'
+      link: 'https://www.youtube.com/playlist?list=PLR9nK3mnD-OXgMjDBdjWUTRia89oixBhx'
+    - type: 'link'
+      link: 'https://aka.ms/sppnp'
+repo_url: https://github.com/pnp/sharing-is-caring
+edit_uri: tree/docs/docs
+site_url: https://pnp.github.io/sharing-is-caring/
+nav:
+  - Home: index.md
+  - Contribution Guidance: pnp-sic-contribution-guidance.md
+
