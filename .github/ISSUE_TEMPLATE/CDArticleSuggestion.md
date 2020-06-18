@@ -1,5 +1,5 @@
 ---
-name: "\U0001F4A1 Article Suggestion"
+name: "\U0001F4A1 Article Suggestion (Community Docs)"
 about: Wish there was an article covering a topic near and dear to you? Suggest it
   here.
 title: ''
