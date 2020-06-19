@@ -13,6 +13,9 @@ The SharePoint Development Community (also known as the SharePoint PnP community
 
 ## GitHub
 
+![Monty](./media/PopWarner-ReadMe/MontyBurns1.gif)
+
+
 There are numerous different repositories related on the provided samples and [open-source projects](open-source-projects.md) available in the following GitHub organizations.
 
 - [SharePoint GitHub organization](https://github.com/SharePoint)
