@@ -1,9 +1,10 @@
 ---
-name: 🐞 Article Issue
+name: "\U0001F41E Article Issue"
 about: See something wrong in an existing article? Suggest a fix here.
 title: ''
 labels: ''
 assignees: ''
+
 ---
 
 We appreciate your feedback - to help the team to understand your needs, please complete the below template to ensure we have the necessary details to assist you.
