@@ -20,4 +20,4 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-![Parker](URL)
+![Parker](./media/Dhiru09-what-is-sharing-is-caring/parker.png)
