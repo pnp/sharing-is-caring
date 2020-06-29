@@ -16,8 +16,8 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [LJ-Boogie](http://www.linkedin.com/in/lauren-jean)
 
 ---
 
-![Parker](URL)
+![Parker](./media/LJ-Boogie-what-is-sharing-is-caring/parker.png)
