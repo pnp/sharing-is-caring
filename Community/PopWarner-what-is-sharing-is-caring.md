@@ -16,8 +16,8 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [David Warner](http://www.linkedin.com/in/DavidWarnerII)
 
 ---
 
-![Parker](URL)
+![Parker](./media/PopWarner-what-is-sharing-is-caring/parker.png)
