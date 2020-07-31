@@ -1,8 +1,8 @@
 ---
 title: What is Sharing is Caring
-ms.date: 3/13/2020
-author: JoanneHendrickson
-ms.reviewer:  jhendr
+ms.date: 7/31/2020
+author: PhastAFrican
+ms.reviewer:  phastafrican
 localization_priority: 
 description: This is a page that is modified during the Sharing is Caring workshop
 ms.collection:  SPCommunity
@@ -20,4 +20,4 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-![Parker](URL)
+![Parker](media/phastafrican-what-is-sharing-is-caring/parker.png)
