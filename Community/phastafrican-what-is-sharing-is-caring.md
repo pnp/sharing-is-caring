@@ -1,7 +1,7 @@
 ---
 title: What is Sharing is Caring
 ms.date: 7/31/2020
-author: PhastAFrican
+author: PhastAfrican
 ms.reviewer:  phastafrican
 localization_priority: 
 description: This is a page that is modified during the Sharing is Caring workshop
