@@ -1,8 +1,8 @@
 ---
 title: What is Sharing is Caring
-ms.date: 3/13/2020
-author: JoanneHendrickson
-ms.reviewer:  jhendr
+ms.date: 7/31/2020
+author: AnthonyPoulin
+ms.reviewer:  apoulin
 localization_priority: 
 description: This is a page that is modified during the Sharing is Caring workshop
 ms.collection:  SPCommunity
@@ -16,8 +16,8 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [Anthony Poulin](https://www.linkedin.com/in/anthonyepoulin/)
 
 ---
 
-![Parker](URL)
+![Parker](./media/Ynot3363-what-is-sharing-is-caring/parker.png)
