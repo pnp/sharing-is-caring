@@ -1,7 +1,7 @@
 ---
 title: What is Sharing is Caring
 ms.date: 3/13/2020
-author: JoanneHendrickson
+author: akashkarda
 ms.reviewer:  jhendr
 localization_priority: 
 description: This is a page that is modified during the Sharing is Caring workshop
@@ -16,8 +16,8 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [Akash Karda](http://www.linkedin.com/in/YourProfileLink)
 
 ---
 
-![Parker](URL)
+![Parker](./media/akashkarda-what-is-sharing-is-caring/parker.png)
