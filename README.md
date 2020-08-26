@@ -9,7 +9,7 @@ Are you looking to contribute to the Microsoft 365 PnP community for the first t
 
 Personal & hands-on assistance is here for YOU! 
 
-Please see the [Sharing-Is-Caring Contribution Guidance Opportunities](pnp-sic-contribution-guidance.md) to learn more about the different resources/options available to provide you experience with the contribution process. 
+Please see the [Sharing-Is-Caring Upcoming Events](https://pnp.github.io/sharing-is-caring/#pnp-sic-events) to register for any of the Sharing is Caring sessions. 
 
 
 ## PnP Contribution Challenge Rewards
