@@ -1,8 +1,8 @@
 ---
 title: What is Sharing is Caring
-ms.date: 3/13/2020
-author: JoanneHendrickson
-ms.reviewer:  jhendr
+ms.date: 08/28/2020
+author: Ganesh Sanap
+ms.reviewer:  
 localization_priority: 
 description: This is a page that is modified during the Sharing is Caring workshop
 ms.collection:  SPCommunity
@@ -16,8 +16,8 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [Ganesh Sanap](https://www.linkedin.com/in/ganesh-sanap-0b5b10ab/)
 
 ---
 
-![Parker](URL)
+![Parker](media/ganesh-sanap-what-is-sharing-is-caring/parker.png)
