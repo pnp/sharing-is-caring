@@ -1,7 +1,7 @@
 ---
 title: What is Sharing is Caring
-ms.date: 3/13/2020
-author: JoanneHendrickson
+ms.date: 8/31/2020
+author: lsmithmier
 ms.reviewer:  jhendr
 localization_priority: 
 description: This is a page that is modified during the Sharing is Caring workshop
@@ -16,8 +16,8 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [Larry Smithmier](http://www.linkedin.com/in/lsmithmier)
 
 ---
 
-![Parker](URL)
+![Parker](media/lsmithmier-what-is-sharing-is-caring/parker.png)
