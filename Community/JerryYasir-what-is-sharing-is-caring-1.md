@@ -1,7 +1,7 @@
 ---
-title: What is Sharing is Caring
-ms.date: 3/13/2020
-author: JoanneHendrickson
+title: What is Sharing is Caring -
+ms.date: 10/1/2020
+author: JerryYasir
 ms.reviewer:  jhendr
 localization_priority: 
 description: This is a page that is modified during the Sharing is Caring workshop
@@ -20,4 +20,4 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-![Parker](URL)
+![Parker](/Community/media/JerryYasir-sharing-is-caring-1/parker.png?raw=true)
