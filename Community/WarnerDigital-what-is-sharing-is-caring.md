@@ -1,7 +1,7 @@
 ---
 title: What is Sharing is Caring
 ms.date: 3/13/2020
-author: JoanneHendrickson
+author: Warner-Digital
 ms.reviewer:  jhendr
 localization_priority: 
 description: This is a page that is modified during the Sharing is Caring workshop
@@ -16,8 +16,8 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [David Warner](http://www.twitter.com/davidwarnerii)
 
 ---
 
-![Parker](URL)
+![Parker](media/WarnerDigital-what-is-sharing-is-caring/parker.png)
