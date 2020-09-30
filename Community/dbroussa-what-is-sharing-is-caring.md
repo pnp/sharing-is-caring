@@ -16,7 +16,7 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [David C. Broussard](http://www.linkedin.com/in/dbroussa)
 
 ---
 
