@@ -1,4 +1,4 @@
-# Sharepoint Developer Community (SharePoint PnP) resources
+# SharePoint Developer Community (SharePoint PnP) resources
 
 The SharePoint Development Community (also known as the SharePoint PnP community) is an open-source initiative coordinated by SharePoint engineering. This community controls SharePoint development documentation, samples, reusable controls, and other relevant open-source initiatives related to SharePoint development.
 
@@ -56,3 +56,4 @@ Following statements apply across all of the SharePoint PnP assets, including sa
 - [SharePoint developer samples](http://aka.ms/spdev-samples)
 - [SharePoint PnP open-source projects](open-source-projects.md)
 - [SharePoint glossary](../general-development/sharepoint-glossary.md) 
+- [LinkedIn Profile](https://jjhwarrington.com)
