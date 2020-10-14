@@ -16,8 +16,8 @@ The "Sharing Is Caring" repository is targeted for learning the basics around ma
 
 ---
 
-**Principal author**: [Your Name Here](http://www.linkedin.com/in/YourProfileLink)
+**Principal author**: [Caleb Miller](https://www.linkedin.com/in/caleb-miller-254b34/)
 
 ---
 
-![Parker](URL)
+![Parker](media/calebmil-what-is-sharing-is-caring/parker.png)
