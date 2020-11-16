@@ -24,7 +24,7 @@ Found an issue related to SharePoint development around the APIs, documentation,
 
 - [SharePoint development issues list](https://github.com/SharePoint/sp-dev-docs/issues)
 
-## Community calls
+## Community calls - Kunal Kankariya  - Test Change
 
 There are numerous community calls for SharePoint development, and you can choose which of them you'd like to join based on your interest and availability. Each call has live demos from SharePoint Engineering, MVPs, or other community members.
 
