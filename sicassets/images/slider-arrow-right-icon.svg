@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>slider-arrow-right-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-650.000000, -186.000000)">
+            <g id="Dark" transform="translate(500.000000, 0.000000)">
+                <g id="Link-Arrow" transform="translate(0.000000, 46.000000)">
+                    <g id="slider-arrow-right-icon" transform="translate(150.000000, 140.000000)">
+                        <circle id="Base" fill="#FFFFFF" transform="translate(24.000000, 24.000000) scale(-1, 1) translate(-24.000000, -24.000000) " cx="24" cy="24" r="24"></circle>
+                        <path d="M28.5570459,25.060509 C28.8423722,24.7765401 29,24.4015811 29,23.999625 C29,23.5986689 28.8423722,23.2217101 28.5570459,22.939741 L21.724179,16.292468 C21.3291118,15.9025107 20.6906194,15.9025107 20.2955522,16.292468 C19.9014826,16.6834253 19.9014826,17.316356 20.2955522,17.7063134 L26.7722599,23.999625 L20.2955522,30.2929367 C19.9014826,30.6828941 19.9014826,31.3158248 20.2955522,31.7067821 C20.6906194,32.0977393 21.3291118,32.0977393 21.724179,31.7067821 L28.5570459,25.060509 L28.5570459,25.060509 Z" id="Arrow-Right-#1-Icon" fill="#9096A4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

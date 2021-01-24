@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>slider-arrow-left-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-594.000000, -186.000000)">
+            <g id="Dark" transform="translate(500.000000, 0.000000)">
+                <g id="Link-Arrow" transform="translate(0.000000, 46.000000)">
+                    <g id="slider-arrow-left-icon" transform="translate(94.000000, 140.000000)">
+                        <circle id="Base" fill="#FFFFFF" transform="translate(24.000000, 24.000000) scale(-1, 1) translate(-24.000000, -24.000000) " cx="24" cy="24" r="24"></circle>
+                        <path d="M19.4429541,25.0615 C19.1576278,24.7775 19,24.4025 19,24.0005 C19,23.5995 19.1576278,23.2225 19.4429541,22.9405 L26.275821,16.2925 C26.6708882,15.9025 27.3093806,15.9025 27.7044478,16.2925 C28.0985174,16.6835 28.0985174,17.3165 27.7044478,17.7065 L21.2277401,24.0005 L27.7044478,30.2945 C28.0985174,30.6845 28.0985174,31.3175 27.7044478,31.7085 C27.3093806,32.0995 26.6708882,32.0995 26.275821,31.7085 L19.4429541,25.0615 L19.4429541,25.0615 L19.4429541,25.0615 Z" id="Arrow-Left-#1-Icon" fill="#9096A4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
