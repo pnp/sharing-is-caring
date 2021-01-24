@@ -178,6 +178,18 @@ td,
 th {
   padding: 0;
 }
+.hideme{
+  display: none;
+}
+.hidelink a {
+  display:none;
+}
+.session_completed {
+  display:none;
+}
+.hidelink .session_completed {
+  display:block !important;
+}
 
 /* ==========================================================================
    Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
