@@ -4117,6 +4117,21 @@ a {
   background-position: 100% 50%;
 }
 
+.lnd_card_template._pnpsic_first_time_presenter {
+  background-image: url("../images/projects/sharingiscaring/card-image-sharingiscaring-first-time-presenter-large-logo.png");
+  background-position: 100% 50%;
+}
+
+.lnd_card_template._pnpsic_more_code_vscode {
+  background-image: url("../images/projects/sharingiscaring/card-image-sharingiscaring-more-than-vscode-large-logo.png");
+  background-position: 100% 50%;
+}
+
+.lnd_card_template._pnpsic_maturity_model {
+  background-image: url("../images/projects/sharingiscaring/card-image-sharingiscaring-maturity-model-large-logo.png");
+  background-position: 100% 50%;
+}
+
 
 
 
