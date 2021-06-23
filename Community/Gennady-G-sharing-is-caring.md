@@ -13,6 +13,7 @@ ms.collection:  SPCommunity
 # Sharing is Caring
 
 ## Getting started
+Something changed
 
 The best way to get started is to attend a [Sharing is Caring](https://aka.ms/sharing-is-caring) session.
 
