@@ -1,0 +1,21 @@
+/* Overrides for the SiC Session Pages */
+
+#w-node-dda75d76c9d2-2b0d0585 {
+    zmargin-top:55px;
+}
+
+.home-sections-label {
+    top:0px;
+}
+
+.lnd_h2 {
+    margin-top:0px;
+}
+
+#pnpsicsessions {
+    padding-top:120px;
+}
+
+.w-layout-grid-single {
+    grid-template-columns: 1fr;
+}
