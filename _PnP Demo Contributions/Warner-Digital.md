@@ -1,1 +1,0 @@
-Greetings from Los Angeles! 💜🧡
