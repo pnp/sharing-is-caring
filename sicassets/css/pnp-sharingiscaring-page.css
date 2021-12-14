@@ -7578,6 +7578,10 @@ a {
   border-bottom-color: #ecf0f1;
 }
 
+.displayNone {
+  display: none;
+}
+
 @media screen and (max-width: 991px) {
   .nav01_line {
     display: block;
