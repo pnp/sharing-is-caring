@@ -3835,6 +3835,16 @@ a {
   text-transform: uppercase;
 }
 
+.lnd_h6Planning {
+  margin-bottom: 0px;
+  color: #636e72;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .lnd_h6.white {
   color: #fff;
 }
@@ -7578,8 +7588,18 @@ a {
   border-bottom-color: #ecf0f1;
 }
 
-.displayNone {
+.displayPlanning .lnd_h6,
+.displayPlanning .button-wrapper.w-inline-block,
+.displayPlanning .lnd_card_link.w-inline-block  {
   display: none;
+}
+
+.lnd_h6Planning {
+  display: none;
+}
+
+.displayPlanning .lnd_h6Planning {
+  display: block;
 }
 
 @media screen and (max-width: 991px) {
