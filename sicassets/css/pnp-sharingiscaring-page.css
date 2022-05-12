@@ -4107,6 +4107,11 @@ a {
   background-position: 100% 50%;
 }
 
+.lnd_card_template._pnpsic_writing_web {
+  background-image: url("../images/projects/sharingiscaring/card-image-sharingiscaring-writingforweb-large-logo.png");
+  background-position: 100% 50%;
+}
+
 .lnd_card_template._pnpsic_powerplatform_samples_first_time_contributor {
   background-image: url("../images/projects/sharingiscaring/card-image-sharingiscaring-powerplatformsamples-large-logo.png");
   background-position: 100% 50%;
