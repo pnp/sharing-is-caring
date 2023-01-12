@@ -27,7 +27,7 @@ ms.custom: intro-internal
 
 # Get started with Power Automate
 
-Welcome! What can you expect from Power Automate? Here are a few examples of what you can do with power automate.
+Welcome! What can you expect from Power Automate? Here are a few examples of what you can do with Power Automate.
 
 * Automate business processes
 * Send automatic reminders for past due tasks
