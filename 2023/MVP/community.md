@@ -6,7 +6,7 @@ ms.service: sharepoint-online
 ms.localizationpriority: high
 ---
 
-# Microsoft 365 Platform Community (PnP) resources around Sharepoint Framework
+# Microsoft 365 Platform Community (PnP) resources around SharePoint Framework
 
 The Microsoft 365 Platform Community (also known as M365 PnP community) is an open-source initiative coordinated by Microsoft 365 engineering. This community controls SharePoint development documentation, samples, reusable controls, and other relevant open-source initiatives related to SharePoint development.
 
