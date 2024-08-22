@@ -12,5 +12,5 @@ Personal & hands-on assistance is here for YOU!
 Please see the [Sharing-Is-Caring Upcoming Events](https://pnp.github.io/sharing-is-caring/#pnp-sic-events) to register for any of the Sharing is Caring sessions. 
 
 
-## PnP Contribution Challenge Rewards
-More Information Coming Soon!
+## Community Recognition Program
+Please see the [Community Recognition Program](https://aka.ms/community/recognition)
