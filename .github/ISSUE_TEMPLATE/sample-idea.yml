@@ -1,6 +1,6 @@
 name: "\U0001F4A1 Sample Idea"
 description: Suggest a new sample idea for the community (Sharing is Caring event only).
-labels: ['type:sample-idea', 'Sample Idea 💡']
+labels: ['sample-idea', 'Sample Idea 💡']
 
 body:
 - type: markdown

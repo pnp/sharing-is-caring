@@ -44,7 +44,7 @@ When you are submitting a new sample, it has to follow up below guidelines
 Before you submit your pull request consider the following guidelines:
 
 * Search [issues](https://github.com/pnp/sharing-is-caring/issues) to make sure that no other contributor is working on a similar sample
-* If you want to create a new sample, [create an issue](https://github.com/pnp/sharing-is-caring/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Asample-idea%2CHelp+wanted+%F0%9F%AA%A7&projects=&template=sample-idea.yml&title=My%20Awesome%20Sample%20Idea&description=I%20have%20a%20great%20idea%20for%20a%20new%20sample.%20Please%20assign%20me%20to%20it) to propose your idea, and ask to be assigned to it.
+* If you want to create a new sample, [create an issue](https://github.com/pnp/sharing-is-caring/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Asample-idea%2CHelp+wanted+%F0%9F%AA%A7&projects=&template=sample-idea.yml&title=My%20Awesome%20Sample%20Idea&description=I%20have%20a%20great%20idea%20for%20a%20new%20sample.%20Please%20assign%20me%20to%20it&labels=sample%20idea) to propose your idea, and ask to be assigned to it.
 
 
 ## Submitting Pull Requests
