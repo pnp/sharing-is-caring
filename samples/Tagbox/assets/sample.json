@@ -1,7 +1,7 @@
 [
     {
       "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-      "name": "pnp-powerapps-samples-tagbox",
+      "name": "pnp-sharing-is-caring-tagbox",
       "version": "1.0.0.0",
       "source": "pnp",
       "creationDateTime": "2021-04-24T00:00:00.000Z",
@@ -11,7 +11,7 @@
       "longDescription": [
         "Contains a textbox that adds items into a dynamic list. Items can be removed from the list again, and the list can be cleared. No duplicate or blank values are allowed."
       ],
-      "url": "https://github.com/pnp/powerapps-samples/tree/main/samples/Tagbox",
+      "url": "https://github.com/pnp/sharing-is-caring/tree/main/samples/Tagbox",
       "products": [
         "Power Apps",
         "Power Platform"
@@ -52,13 +52,13 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/Tagbox/assets/preview.gif?raw=true",
+          "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/Tagbox/assets/preview.gif?raw=true",
           "alt": "Preview"
         },
         {
           "type": "image",
           "order": 101,
-          "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/Tagbox/assets/tagbox.png?raw=true",
+          "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/Tagbox/assets/tagbox.png?raw=true",
           "alt": "Preview"
         }
       ],

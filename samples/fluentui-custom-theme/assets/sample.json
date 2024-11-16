@@ -1,7 +1,7 @@
 [
   {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "pnp-powerapps-samples-Fluentui-custom-theme",
+    "name": "pnp-sharing-is-caring-Fluentui-custom-theme",
     "version": "1.0.0.0",
     "source": "pnp",
     "creationDateTime": "2021-05-19T00:00:00.000Z",
@@ -11,7 +11,7 @@
     "longDescription": [
       "Implementing a custom theme (for tablet layout) to apply the style of the Fluent UI controls to the canvas controls with extensive modification of the \"Default Theme\" inside the theme.json file."
     ],
-    "url": "https://github.com/pnp/powerapps-samples/tree/main/samples/fluentui-custom-theme",
+    "url": "https://github.com/pnp/sharing-is-caring/tree/main/samples/fluentui-custom-theme",
     "products": [
       "Power Apps",
       "Power Platform"
@@ -52,19 +52,19 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/fluentui-custom-theme/assets/theme-light.png?raw=true",
+        "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/fluentui-custom-theme/assets/theme-light.png?raw=true",
         "alt": "Theme Light"
       },
       {
         "type": "image",
         "order": 101,
-        "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/fluentui-custom-theme/assets/theme-dark.png?raw=true",
+        "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/fluentui-custom-theme/assets/theme-dark.png?raw=true",
         "alt": "Theme Dark"
       },
       {
         "type": "image",
         "order": 102,
-        "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/fluentui-custom-theme/assets/theme-dark-light-phone.png?raw=true",
+        "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/fluentui-custom-theme/assets/theme-dark-light-phone.png?raw=true",
         "alt": "Phone Preview"
       }
     ],

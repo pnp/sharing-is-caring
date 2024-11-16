@@ -1,7 +1,7 @@
 [
   {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "pnp-powerapps-samples-calendar-component",
+    "name": "pnp-sharing-is-caring-calendar-component",
     "version": "1.0.0.0",
     "source": "pnp",
     "creationDateTime": "2021-05-05T00:00:00.000Z",
@@ -11,7 +11,7 @@
     "longDescription": [
       "A re-usable component that allows you to display events in  a calendar."
     ],
-    "url": "https://github.com/pnp/powerapps-samples/tree/main/samples/calendar-component",
+    "url": "https://github.com/pnp/sharing-is-caring/tree/main/samples/calendar-component",
     "products": [
       "Power Apps",
       "Power Platform"
@@ -52,7 +52,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/calendar-component/assets/preview.png?raw=true",
+        "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/calendar-component/assets/preview.png?raw=true",
         "alt": "Preview"
       }
     ],

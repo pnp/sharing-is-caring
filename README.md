@@ -1,20 +1,12 @@
-# Power Apps Samples
+# Sharing is Caring
 
-This repository contains community samples that demonstrate different usage patterns for Power Apps.
+This repository is used to provide hands-on guidance on how to contribute to the The Microsoft 365 & Power Platform Community community. and open-source initiatives.
 
-> We welcome community contributions to the `samples` folder in this repository for demonstrating different use cases with Power Apps. 
+If you are looking to learn how to use the Microsoft 365 & Power Platform resources or contribute back to the community and not sure where to start, we are here for you!
 
 ## Have issues or questions?
 
 Please use following logic on submitting your questions or issues to right location to ensure that they are noticed and addressed as soon as possible.
-
-## Additional resources
-
-- [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/power-platform/bd-p/PowerPlatform)
-
-## Using the samples
-
-Please refer to [this article](https://github.com/pnp/powerapps-samples/wiki/How-to-use-Power-Apps-samples) to get you started.
 
 ## Authors
 
@@ -22,7 +14,7 @@ This repository's contributors are all community members who volunteered their t
 
 ## Contributions
 
-These samples are direct from the feature teams, [PnP team](http://aka.ms/m365pnp) or shared by the community. We welcome your input on issues and suggestions for new samples. We do also welcome community contributions. If you have any questions, just let us know.
+These samples are direct from the feature teams, [PnP team](https://aka.ms/m365pnp) or shared by the community. We welcome your input on issues and suggestions for new samples. We do also welcome community contributions. If you have any questions, just let us know.
 
 Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible.
 
@@ -32,4 +24,4 @@ This repository has adopted the [Microsoft Open Source Code of Conduct](https://
 
 > Sharing is caring!
 
-<img src="https://telemetry.sharepointpnp.com/powerapps-samples/README.md" />
+<img src="https://telemetry.sharepointpnp.com/sharing-is-caring/README.md" />

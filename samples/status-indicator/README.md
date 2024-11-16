@@ -77,7 +77,7 @@ This app uses SharePoint as a data source and requires a single issues list crea
 
 ## Minimal Path to Awesome
 
-* [Download](https://github.com/pnp/powerapps-samples/blob/main/samples/status-indicator/solution/Status-Indicator.msapp) the `.msapp` from the `solution` folder
+* [Download](https://github.com/pnp/sharing-is-caring/blob/main/samples/status-indicator/solution/Status-Indicator.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 * Select the **Data** tab
 * Delete **Issue tracker** from the list of data sources in the app
@@ -102,11 +102,11 @@ You can also use the [Power Apps CLI](https://docs.microsoft.com/powerapps/devel
 
 ## Support
 
-While we don't support samples, if you encounter any issues while using this sample, you can [create a new issue](https://github.com/pnp/powerapps-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=bug-report.yml&sample=status-indicator&authors=@dcashpeterson&title=status-indicator%20-%20).
+While we don't support samples, if you encounter any issues while using this sample, you can [create a new issue](https://github.com/pnp/sharing-is-caring/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=bug-report.yml&sample=status-indicator&authors=@dcashpeterson&title=status-indicator%20-%20).
 
-For questions regarding this sample, [create a new question](https://github.com/pnp/powerapps-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=question.yml&sample=status-indicator&authors=@dcashpeterson&title=status-indicator%20-%20).
+For questions regarding this sample, [create a new question](https://github.com/pnp/sharing-is-caring/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=question.yml&sample=status-indicator&authors=@dcashpeterson&title=status-indicator%20-%20).
 
-Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/powerapps-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=status-indicator&authors=@dcashpeterson&title=status-indicator%20-%20).
+Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/sharing-is-caring/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=status-indicator&authors=@dcashpeterson&title=status-indicator%20-%20).
 
 ## For more information
 
@@ -114,4 +114,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 - [Power Apps canvas apps documentation](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/)
 
 
-<img src="https://telemetry.sharepointpnp.com/powerapps-samples/samples/status-indicator" />
+<img src="https://telemetry.sharepointpnp.com/sharing-is-caring/samples/status-indicator" />

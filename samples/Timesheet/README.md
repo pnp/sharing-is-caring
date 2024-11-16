@@ -24,11 +24,11 @@ This timesheet application is a tablet-based canvas app that gives you a way to 
 
 ### Home Screen
 
-![home screen](./assets/TimesheetHomeScreen.png)  
+![home screen](../timesheet/assets/TimesheetHomeScreen.png)  
 
 ### Timesheet Entry Screen
 
-![timesheet entry screen](./assets/TimesheetEntryScreen.png)  
+![timesheet entry screen](../timesheet/assets/TimesheetEntryScreen.png)  
 
 
 ## Applies to
@@ -103,7 +103,7 @@ This list contains the timesheet entries.  Set the list up as follows:
 
 ## Minimal Path to Awesome
 
-* [Download](https://github.com/pnp/powerapps-samples/blob/main/samples/Timesheet/solution/WeeklyTimesheet.msapp) the `.msapp` from the `solution` folder
+* [Download](https://github.com/pnp/sharing-is-caring/blob/main/samples/Timesheet/solution/WeeklyTimesheet.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 * Select the **Data** tab
 * Remove the `BillTo` and `TimesheetEntries` data sources from the app
@@ -129,11 +129,11 @@ You can also use the [Power Apps CLI](https://docs.microsoft.com/powerapps/devel
 
 ## Support
 
-While we don't support samples, if you encounter any issues while using this sample, you can [create a new issue](https://github.com/pnp/powerapps-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=bug-report.yml&sample=Timesheet&authors=@aprildunnam&title=Timesheet%20-%20).
+While we don't support samples, if you encounter any issues while using this sample, you can [create a new issue](https://github.com/pnp/sharing-is-caring/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=bug-report.yml&sample=Timesheet&authors=@aprildunnam&title=Timesheet%20-%20).
 
-For questions regarding this sample, [create a new question](https://github.com/pnp/powerapps-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=question.yml&sample=Timesheet&authors=@aprildunnam&title=Timesheet%20-%20).
+For questions regarding this sample, [create a new question](https://github.com/pnp/sharing-is-caring/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=question.yml&sample=Timesheet&authors=@aprildunnam&title=Timesheet%20-%20).
 
-Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/powerapps-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=Timesheet&authors=@aprildunnam&title=Timesheet%20-%20).
+Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/sharing-is-caring/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=Timesheet&authors=@aprildunnam&title=Timesheet%20-%20).
 
 ## For more information
 
@@ -141,4 +141,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 - [Overview of creating apps in Power Apps](https://docs.microsoft.com/powerapps/maker/)
 - [Power Apps canvas apps documentation](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/)
 
-<img src="https://telemetry.sharepointpnp.com/powerapps-samples/samples/timesheet" />
+<img src="https://telemetry.sharepointpnp.com/sharing-is-caring/samples/timesheet" />

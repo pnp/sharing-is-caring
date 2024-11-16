@@ -1,7 +1,7 @@
 [
     {
       "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-      "name": "pnp-powerapps-samples-expandable-navigation",
+      "name": "pnp-sharing-is-caring-expandable-navigation",
       "version": "1.0.0.0",
       "source": "pnp",
       "creationDateTime": "2021-04-26T00:00:00.000Z",
@@ -11,7 +11,7 @@
       "longDescription": [
         "This Canvas Application is an example for a expandable navigation using Fluent UI icons. It also shows how a lightbox-styled pop up works."
       ],
-      "url": "https://github.com/pnp/powerapps-samples/tree/main/samples/expandable-navigation",
+      "url": "https://github.com/pnp/sharing-is-caring/tree/main/samples/expandable-navigation",
       "products": [
         "Power Apps",
         "Power Platform"
@@ -53,7 +53,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/expandable-navigation/assets/preview.gif?raw=true",
+          "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/expandable-navigation/assets/preview.gif?raw=true",
           "alt": "Preview"
         }
       ],

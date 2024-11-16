@@ -1,0 +1,23 @@
+name: "\U0001F4A1 Sample Idea"
+description: Suggest a new sample idea for the community (Sharing is Caring event only).
+labels: ['type:sample-idea', 'Sample Idea 💡']
+
+body:
+- type: markdown
+  attributes:
+    value: |
+
+      Thank you for volunteering to submit a new sample! Please note that this template is only intended to be used during Sharing is Caring events.
+      
+      - This template is only intended to be used during Sharing is Caring events.
+      - This repo is maintained by volunteers. Please be courteous and patient. 🙂
+      - If you have multiple ideas submit them separately so we can track resolution.
+  
+- type: textarea
+  id: description
+  attributes:
+    label: Sample description
+    description: What should the sample do?
+    placeholder: Describe the sample idea in detail
+  validations:
+    required: true

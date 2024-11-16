@@ -1,7 +1,7 @@
 [
   {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "pnp-powerapps-samples-status-indicator",
+    "name": "pnp-sharing-is-caring-status-indicator",
     "version": "1.0.0.0",
     "source": "pnp",
     "creationDateTime": "2021-02-24T00:00:00.000Z",
@@ -11,7 +11,7 @@
     "longDescription": [
       "This sample shows how to add a status indicator in a display form. This uses a train stop style user interface to show a progression of a status field from New to Completed. It provides the user with visibility into the status of their request providing a better experience for them."
     ],
-    "url": "https://github.com/pnp/powerapps-samples/tree/main/samples/status-indicator",
+    "url": "https://github.com/pnp/sharing-is-caring/tree/main/samples/status-indicator",
     "products": [
       "Power Apps",
       "Power Platform"
@@ -57,13 +57,13 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/status-indicator/assets/powerapp-statusindicator.jpg?raw=true",
+        "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/status-indicator/assets/powerapp-statusindicator.jpg?raw=true",
         "alt": "Home Screen"
       },
       {
         "type": "image",
         "order": 101,
-        "url": "https://github.com/pnp/powerapps-samples/blob/main/samples/status-indicator/assets/powerapp-statusindicator2.jpg?raw=true",
+        "url": "https://github.com/pnp/sharing-is-caring/blob/main/samples/status-indicator/assets/powerapp-statusindicator2.jpg?raw=true",
         "alt": "Display Screen"
       }
     ],

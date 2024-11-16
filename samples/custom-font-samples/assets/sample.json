@@ -1,7 +1,7 @@
 [
   {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "pnp-powerapps-samples-custom-font-samples",
+    "name": "pnp-sharing-is-caring-custom-font-samples",
     "version": "1.0.0.0",
     "source": "pnp",
     "creationDateTime": "2021-05-13T00:00:00.000Z",
@@ -11,7 +11,7 @@
     "longDescription": [
       "177 custom font samples for Power Apps"
     ],
-    "url": "https://github.com/pnp/powerapps-samples/tree/main/samples/custom-font-samples",
+    "url": "https://github.com/pnp/sharing-is-caring/tree/main/samples/custom-font-samples",
     "products": [
       "Power Apps",
       "Power Platform"
@@ -52,7 +52,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerapps-samples/raw/main/samples/custom-font-samples/assets/preview.jpg",
+        "url": "https://github.com/pnp/sharing-is-caring/raw/main/samples/custom-font-samples/assets/preview.jpg",
         "alt": "Preview"
       }
     ],

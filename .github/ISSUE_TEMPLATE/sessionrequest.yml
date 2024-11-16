@@ -1,0 +1,26 @@
+name: "\U0001F9EA Session request"
+description: Request a new session topic
+labels: ['Needs: Triage :mag:', 'type:session-request', 'Help wanted 🪧']
+
+body:
+- type: markdown
+  attributes:
+    value: |
+
+      Thank you for making a request! Use the sections below to submit a request **only** for a Sharing is Caring sessions.
+      
+      - Requests that do not follow the below template will automatically be closed
+      - All requests are welcome - the more the merrier!
+      - This repo is maintained by volunteers. Please be courteous and patient. 🙂
+      - Remember to include sufficient details and context.
+      - If you have multiple requests submit them separately so we can track resolution.
+      - We accept pull requests. If you know how to make it - go ahead! If you're unsure how to do a pull request, consider signing up for a free [Sharing is Caring First-Time Contributor](http://aka.ms/sharing-is-caring#pnp-sic-first-time-contributor) session.
+
+- type: textarea
+  id: description
+  attributes:
+    label: Session description
+    description: What should the session cover?
+    placeholder: Tell us what you want, what you really, really want.
+  validations:
+    required: true
