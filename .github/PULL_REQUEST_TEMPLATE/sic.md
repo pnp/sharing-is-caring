@@ -1,5 +1,11 @@
-#### Category
-- [x] New Sample	
+## Category
 			
-#### What's in this Pull Request?
+|        Q        |                    A                    |
+| --------------- | --------------------------------------- |
+| Bug fix?        | no                                      |
+| New feature?    | no                                      |
+| New sample?     | yes                                     |
+| Related issues? | None                                    |
+
+## What's in this Pull Request?
 Power Apps Calendar Component
