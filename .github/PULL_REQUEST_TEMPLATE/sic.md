@@ -1,6 +1,3 @@
----
-title: Sharing is Caring Power App Sample
----
 #### Category
 - [x] New Sample	
 			
