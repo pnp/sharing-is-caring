@@ -37,6 +37,3 @@
 >
 > *Remember that this repository is maintained by community members who volunteer their time to help. Be courteous and patient.*
 > _(DELETE THIS SECTION AFTER READING)_
-
-
-# ALL YOUR BASES ARE BELONG TO US
