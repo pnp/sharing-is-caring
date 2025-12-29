@@ -48,10 +48,10 @@ Here's a high-level process for submitting new samples or updates to existing on
 
 1. Sign the Contributor License Agreement (see below)
 2. Fork this repository [pnp/powerapp-samples](https://github.com/pnp/powerapps-samples) to your GitHub account
-3. Create a new branch from the `sharingiscaring-june23` branch for your fork for the contribution
+3. Create a new branch from the `sharingiscaring-dec29` branch for your fork for the contribution
 4. Include your changes to your branch
 5. Commit your changes using descriptive commit message * These are used to track changes on the repositories for monthly communications
-6. Create a pull request in your own fork and target the `sharingiscaring-june23` branch
+6. Create a pull request in your own fork and target the `sharingiscaring-dec29` branch
 7. Fill up the provided PR template with the requested details
 
 Before you submit your pull request consider the following guidelines:
