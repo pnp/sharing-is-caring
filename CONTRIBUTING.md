@@ -47,7 +47,7 @@ Before you submit your pull request, make sure that you [read the guidance on ho
 Here's a high-level process for submitting new samples or updates to existing ones.
 
 1. Sign the Contributor License Agreement (see below)
-2. Fork this repository [pnp/powerapp-samples](https://github.com/pnp/powerapps-samples) to your GitHub account
+2. Fork this repository [pnp/sharing-is-caring](https://github.com/pnp/sharing-is-caring) to your GitHub account
 3. Create a new branch from the `sharingiscaring-june23` branch for your fork for the contribution
 4. Include your changes to your branch
 5. Commit your changes using descriptive commit message * These are used to track changes on the repositories for monthly communications
@@ -56,18 +56,18 @@ Here's a high-level process for submitting new samples or updates to existing on
 
 Before you submit your pull request consider the following guidelines:
 
-* Search [GitHub](https://github.com/pnp/powerapps-samples/pulls) for an open or closed Pull Request
+* Search [GitHub](https://github.com/pnp/sharing-is-caring/pulls) for an open or closed Pull Request
   which relates to your submission. You don't want to duplicate effort.
-* Make sure you have a link in your local cloned fork to the [pnp/powerapps-samples](https://github.com/pnp/powerapps-samples):
+* Make sure you have a link in your local cloned fork to the [pnp/sharing-is-caring](https://github.com/pnp/sharing-is-caring):
 
   ```shell
   # check if you have a remote pointing to the Microsoft repo:
   git remote -v
 
-  # if you see a pair of remotes (fetch & pull) that point to https://github.com/pnp/powerapps-samples, you're ok... otherwise you need to add one
+  # if you see a pair of remotes (fetch & pull) that point to https://github.com/pnp/sharing-is-caring, you're ok... otherwise you need to add one
 
   # add a new remote named "upstream" and point to the Microsoft repo
-  git remote add upstream https://github.com/pnp/powerapps-samples.git
+  git remote add upstream https://github.com/pnp/sharing-is-caring.git
   ```
 
 * Make your changes in a new git branch:
@@ -76,7 +76,7 @@ Before you submit your pull request consider the following guidelines:
   git checkout -b transmographier main
   ```
 
-* Ensure your fork is updated and not behind the upstream **powerapps-samples** repo. Refer to these resources for more information on syncing your repo:
+* Ensure your fork is updated and not behind the upstream **sharing-is-caring** repo. Refer to these resources for more information on syncing your repo:
   * [GitHub Help: Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)
   * [Keep Your Forked Git Repo Updated with Changes from the Original Upstream Repo](http://www.andrewconnell.com/blog/keep-your-forked-git-repo-updated-with-changes-from-the-original-upstream-repo)
   * For a quick cheat sheet:
@@ -85,7 +85,7 @@ Before you submit your pull request consider the following guidelines:
     # assuming you are in the folder of your locally cloned fork....
     git checkout main
 
-    # assuming you have a remote named `upstream` pointing official **powerapps-samples** repo
+    # assuming you have a remote named `upstream` pointing official **sharing-is-caring** repo
     git fetch upstream
 
     # update your local main to be a mirror of what's in the main repo
@@ -108,23 +108,23 @@ Before you submit your pull request consider the following guidelines:
 
 If the sample you wish to contribute is stored in your own GitHub repository, you can use the following steps to merge it with this repository:
 
-* Fork the `powerapps-samples` repository from GitHub
+* Fork the `sharing-is-caring` repository from GitHub
 * Create a local git repository
 
     ```shell
-    md powerapps-samples
-    cd powerapps-samples
+    md sharing-is-caring
+    cd sharing-is-caring
     git init
     ```
 
-* Pull your forked copy of `powerapps-samples` into your local repository
+* Pull your forked copy of `sharing-is-caring` into your local repository
 
     ```shell
-    git remote add origin https://github.com/yourgitaccount/powerapps-samples.git
+    git remote add origin https://github.com/yourgitaccount/sharing-is-caring.git
     git pull origin main
     ```
 
-* Pull your other project from GitHub into the `samples` folder of your local copy of `powerapps-samples`
+* Pull your other project from GitHub into the `samples` folder of your local copy of `sharing-is-caring`
 
     ```shell
     git subtree add --prefix=samples/projectname https://github.com/yourgitaccount/projectname.git main
@@ -146,4 +146,4 @@ Thank you for your contribution.
 
 > Sharing is caring.
 
-<img src="https://telemetry.sharepointpnp.com/powerapps-samples/CONTRIBUTING.md" />
+<img src="https://telemetry.sharepointpnp.com/sharing-is-caring/CONTRIBUTING.md" />

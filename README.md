@@ -32,4 +32,4 @@ This repository has adopted the [Microsoft Open Source Code of Conduct](https://
 
 > Sharing is caring!
 
-<img src="https://telemetry.sharepointpnp.com/powerapps-samples/README.md" />
+<img src="https://telemetry.sharepointpnp.com/sharing-is-caring/README.md" />
