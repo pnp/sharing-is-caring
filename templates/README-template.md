@@ -7,7 +7,7 @@ Short summary on functionality and used technologies.
 > Please provide a high-quality screenshot of your Power App below. It should be stored in a folder called `assets`.
 > If possible, use a resolution of 1920x1080.
 > You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
-> DELETE THIS PARAGRAPH BEFORE SUBMITTING
+> DELETE THIS PARAGRAPH BEFORE SUBMITTING!
 
 ![picture of the sample](../samples/assets/preview.png)
 
