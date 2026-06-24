@@ -3,35 +3,212 @@
   "organizationUrl": "https://www.credly.com/organizations/m365pnp/badges",
   "badges": [
     {
-      "id": "sharing-is-caring-contributor-2022",
-      "name": "PnP Sharing Is Caring Contributor",
-      "description": "Recognition for contributing to the Sharing Is Caring community.",
-      "url": "https://www.credly.com/org/m365pnp/badge/sharing-is-caring-contributor-2022",
+      "id": "26480e4a-0095-49d7-9313-3602850c3f97",
+      "name": "Community Contributor - Microsoft 365 & Power Platform Community 2026",
+      "description": "Community Contributor badge earners contributed to one or more Microsoft 365 & Power Platform Community initiatives by completing at least one contribution to a Microsoft 365 & Power Platform Community initiative within the 2026 calendar year.",
+      "url": "https://www.credly.com/org/m365pnp/badge/community-contributor-microsoft-365-power-platform-",
+      "image": "../assets/images/badges/26480e4a-0095-49d7-9313-3602850c3f97.png",
       "featured": true
     },
     {
-      "id": "community-contributor-2022",
-      "name": "Community Contributor",
-      "description": "Recognition for community contributions.",
-      "url": "https://www.credly.com/org/m365pnp/badge/community-contributor-2022"
+      "id": "03beab5c-ae4a-4b0c-af01-f0d060c7aded",
+      "name": "Snippet Sorcerer - Microsoft 365 & Power Platform Community 2026",
+      "description": "Snippet Sorcerer badge earners contributed to the Microsoft 365 & Power Platform Community - Power Platform Snippets or Script Samples community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/snippet-sorcerer-microsoft-365-power-platform-commu.2",
+      "image": "../assets/images/badges/03beab5c-ae4a-4b0c-af01-f0d060c7aded.png",
+      "featured": false
     },
     {
-      "id": "pnp-maintainer-2022",
-      "name": "PnP Maintainer",
-      "description": "Recognition for maintaining a PnP project.",
-      "url": "https://www.credly.com/org/m365pnp/badge/pnp-maintainer-2022"
+      "id": "2d260f50-a97a-4233-95d7-c69854e41b99",
+      "name": "Prompt Pro - Microsoft 365 & Power Platform Community 2026",
+      "description": "Prompt Pro badge earners contributed to the Microsoft 365 & Power Platform Community - Copilot Prompt or Power Platform Prompt community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/prompt-pro-microsoft-365-power-platform-community-2.4",
+      "image": "../assets/images/badges/2d260f50-a97a-4233-95d7-c69854e41b99.png",
+      "featured": false
     },
     {
-      "id": "pnp-blog-author-2022",
-      "name": "PnP Blog Author",
-      "description": "Recognition for sharing knowledge through PnP community content.",
-      "url": "https://www.credly.com/org/m365pnp/badge/pnp-blog-author-2022"
+      "id": "f2b04a85-fcd2-44ec-81df-f06c5379f201",
+      "name": "Blog Author - Microsoft 365 & Power Platform Community 2026",
+      "description": "Blog Author badge earners contributed to the Microsoft 365 & Power Platform Community by writing and publishing a blog post in 2026.",
+      "url": "https://www.credly.com/org/m365pnp/badge/blog-author-microsoft-365-power-platform-community-.4",
+      "image": "../assets/images/badges/f2b04a85-fcd2-44ec-81df-f06c5379f201.png",
+      "featured": false
     },
     {
-      "id": "community-call-presenter",
-      "name": "PnP Community Call Presenter",
-      "description": "Recognition for presenting to the Microsoft 365 and Power Platform community.",
-      "url": "https://www.credly.com/org/m365pnp/badge/m365-platform-community-pnp-call-presenter"
+      "id": "121cb3a3-05c1-49e7-a610-bf89520a0bc9",
+      "name": "Sharing is Caring Contributor - Microsoft 365 & Power Platform Community 2025",
+      "description": "Sharing is Caring badge earners contributed to by attending and participating in at least one contribution-based Sharing is Caring session within the 2025 calendar year.",
+      "url": "https://www.credly.com/org/m365pnp/badge/sharing-is-caring-contributor-microsoft-365-power-p.1",
+      "image": "../assets/images/badges/121cb3a3-05c1-49e7-a610-bf89520a0bc9.png",
+      "featured": false
+    },
+    {
+      "id": "73786393-453a-4950-9625-970beeb79871",
+      "name": "SPFx Adaptive Card Extensions - Microsoft 365 & Power Platform Community 2026",
+      "description": "Adaptive Card Extensions badge earners contributed to the Microsoft 365 & Power Platform Community - Adaptive Card Extensions community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/spfx-adaptive-card-extensions-microsoft-365-power-p.1",
+      "image": "../assets/images/badges/73786393-453a-4950-9625-970beeb79871.png",
+      "featured": false
+    },
+    {
+      "id": "37134c54-5ae1-47a1-96b1-f5cc30186cc0",
+      "name": "SPFx Web Part Samples - Microsoft 365 & Power Platform Community 2026",
+      "description": "SPFx Web Part Samples badge earners contributed to the Microsoft 365 & Power Platform Community - SPFx Web Part Samples community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/spfx-web-part-samples-microsoft-365-power-platform-.6",
+      "image": "../assets/images/badges/37134c54-5ae1-47a1-96b1-f5cc30186cc0.png",
+      "featured": false
+    },
+    {
+      "id": "445cb916-8fbc-4d4a-b615-0008cdde3b41",
+      "name": "Modern Search - Microsoft 365 & Power Platform Community 2026",
+      "description": "Modern Search badge earners contributed to the Microsoft 365 & Power Platform Community - Modern Script community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/modern-search-microsoft-365-power-platform-communit.1",
+      "image": "../assets/images/badges/445cb916-8fbc-4d4a-b615-0008cdde3b41.png",
+      "featured": false
+    },
+    {
+      "id": "450582bf-4e0c-453a-bb0b-1ad56f1de665",
+      "name": "SPFx Toolkit - Microsoft 365 & Power Platform Community 2026",
+      "description": "SPFx Toolkit badge earners contributed to the Microsoft 365 & Power Platform Community - SPFx Toolkit community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/spfx-toolkit-microsoft-365-power-platform-community.2",
+      "image": "../assets/images/badges/450582bf-4e0c-453a-bb0b-1ad56f1de665.png",
+      "featured": false
+    },
+    {
+      "id": "0a191b80-aba9-4dd0-a6e2-6172566f4086",
+      "name": "Power Platform Samples - Microsoft 365 & Power Platform Community 2026",
+      "description": "Power Platform Samples badge earners contributed to the Microsoft 365 & Power Platform Community Power Platform Samples by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/power-platform-samples-microsoft-365-power-platform.4",
+      "image": "../assets/images/badges/0a191b80-aba9-4dd0-a6e2-6172566f4086.png",
+      "featured": false
+    },
+    {
+      "id": "04def791-937a-4823-a83f-bc7d56bc84de",
+      "name": "CLI for Microsoft 365 - Microsoft 365 & Power Platform Community 2026",
+      "description": "2025 CLI for Microsoft 365 badge earners contributed to CLI for Microsoft 365 in the Microsoft 365 & Power Platform Community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/cli-for-microsoft-365-microsoft-365-power-platform-.3",
+      "image": "../assets/images/badges/04def791-937a-4823-a83f-bc7d56bc84de.png",
+      "featured": false
+    },
+    {
+      "id": "9c562af3-8133-422a-9afb-53407d1be34b",
+      "name": "Script Samples - Microsoft 365 & Power Platform Community 2026",
+      "description": "Script Sample badge earners contributed to the Microsoft 365 & Power Platform Community - Script Samples community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/script-samples-microsoft-365-power-platform-communi.6",
+      "image": "../assets/images/badges/9c562af3-8133-422a-9afb-53407d1be34b.png",
+      "featured": false
+    },
+    {
+      "id": "b368b72b-d548-4c92-883f-bd0e903f3e2b",
+      "name": "Community Content Author - Microsoft 365 & Power Platform Community 2026",
+      "description": "Community Content (Docs) Article Author badge earners contributed to the Microsoft 365 & Power Platform Community by writing and publishing Community Content Articles in 2026.",
+      "url": "https://www.credly.com/org/m365pnp/badge/community-content-author-microsoft-365-power-platfo.4",
+      "image": "../assets/images/badges/b368b72b-d548-4c92-883f-bd0e903f3e2b.png",
+      "featured": false
+    },
+    {
+      "id": "1d9aa5a4-7362-4c9f-9b03-c1dbcfd96799",
+      "name": "PnP PowerShell - Microsoft 365 & Power Platform Community 2026",
+      "description": "2026 PnP PowerShell badge earners contributed to PnP PowerShell in the Microsoft 365 & Power Platform Community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/pnp-powershell-microsoft-365-power-platform-communi.2",
+      "image": "../assets/images/badges/1d9aa5a4-7362-4c9f-9b03-c1dbcfd96799.png",
+      "featured": false
+    },
+    {
+      "id": "1b4a63e8-906c-42a7-9b14-58b6fd8e9fe2",
+      "name": "React Controls - Microsoft 365 & Power Platform Community 2026",
+      "description": "Microsoft 365 & Power Platform Community Samples - React Controls badge earners contributed to the Microsoft 365 & Power Platform Community - Samples community by completing the contribution criteria below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/react-controls-microsoft-365-power-platform-communi.2",
+      "image": "../assets/images/badges/1b4a63e8-906c-42a7-9b14-58b6fd8e9fe2.png",
+      "featured": false
+    },
+    {
+      "id": "af529245-2e5d-4829-b7c8-86700059d4c4",
+      "name": "Property Controls - Microsoft 365 & Power Platform Community 2026",
+      "description": "Microsoft 365 & Power Platform Community Samples - Property Controls badge earners contributed to the Microsoft 365 & Power Platform Community - Samples community by completing the contribution criteria below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/property-controls-microsoft-365-power-platform-comm.1",
+      "image": "../assets/images/badges/af529245-2e5d-4829-b7c8-86700059d4c4.png",
+      "featured": false
+    },
+    {
+      "id": "cebe72e8-9989-47c3-94f1-230306cdb808",
+      "name": "Springtime SuperStar 2026 - Microsoft 365 & Power Platform Community",
+      "description": "Springtime SuperStar Community Contributor badge earners contributed to one or more Microsoft 365 & Power Platform Community initiatives by completing at least one contribution to a Microsoft 365 & Power Platform Community initiative within the months of March, April or May in the 2026 calendar year.",
+      "url": "https://www.credly.com/org/m365pnp/badge/springtime-superstar-2026-microsoft-365-power-platf",
+      "image": "../assets/images/badges/cebe72e8-9989-47c3-94f1-230306cdb808.png",
+      "featured": false
+    },
+    {
+      "id": "ca41eb54-ed9e-4aeb-ae5e-475c465c4a24",
+      "name": "SharePoint 2026 Hackathon - Microsoft 365 & Power Platform Community",
+      "description": "SharePoint 2026 Hackathon badge earners submitted a solution for the Microsoft SharePoint 2026 Hackathon.",
+      "url": "https://www.credly.com/org/m365pnp/badge/sharepoint-2026-hackathon-microsoft-365-power-platf",
+      "image": "../assets/images/badges/ca41eb54-ed9e-4aeb-ae5e-475c465c4a24.png",
+      "featured": false
+    },
+    {
+      "id": "f5e1d2c8-57a8-4b51-a135-de1674ebc0dd",
+      "name": "Copilot Developer Camp - Declarative Pioneer - Microsoft 365 & Power Platform Community",
+      "description": "The Declarative Pioneer badge recognizes developers who have demonstrated hands-on expertise in building Declarative Agents using the Model Context Protocol (MCP) and Connected Agents. This badge highlights a strong understanding of declarative patterns and modern Copilot extensibility.",
+      "url": "https://www.credly.com/org/m365pnp/badge/copilot-developer-camp-declarative-pioneer-microsof",
+      "image": "../assets/images/badges/f5e1d2c8-57a8-4b51-a135-de1674ebc0dd.png",
+      "featured": false
+    },
+    {
+      "id": "6b091ea4-3f60-4bfc-8e29-db31baaa8a8b",
+      "name": "Copilot Developer Camp - Custom Engine Ranger - Microsoft 365 & Power Platform Community",
+      "description": "The Custom Engine Ranger badge is awarded to developers who master the creation of Custom Engine Agents using the Microsoft Agent Framework and the Microsoft 365 Agents SDK. It represents advanced skills in agent logic, orchestration, and integration with enterprise workloads.",
+      "url": "https://www.credly.com/org/m365pnp/badge/copilot-developer-camp-custom-engine-ranger-microso",
+      "image": "../assets/images/badges/6b091ea4-3f60-4bfc-8e29-db31baaa8a8b.png",
+      "featured": false
+    },
+    {
+      "id": "fa6a5c21-4ef5-42e9-94ca-e2ca7fc6fde5",
+      "name": "Copilot Developer Camp - MCP Integrator - Microsoft 365 & Power Platform Community",
+      "description": "The MCP Integrator badge recognizes developers who can design and implement agents that integrate seamlessly with external tools through the Model Context Protocol (MCP). This badge emphasizes secure integration patterns and real-world extensibility scenarios.",
+      "url": "https://www.credly.com/org/m365pnp/badge/copilot-developer-camp-mcp-integrator-microsoft-365",
+      "image": "../assets/images/badges/fa6a5c21-4ef5-42e9-94ca-e2ca7fc6fde5.png",
+      "featured": false
+    },
+    {
+      "id": "8cee688b-a7b8-49c0-8885-a2ea0d5ae601",
+      "name": "Copilot Developer Camp - Connection Champion - Microsoft 365 & Power Platform Community",
+      "description": "The Connection Champion badge is awarded to developers who excel in creating Connected Agents. It showcases the ability to design agents that collaborate, share context, and work together to deliver richer Copilot experiences.",
+      "url": "https://www.credly.com/org/m365pnp/badge/copilot-developer-camp-connection-champion-microsof",
+      "image": "../assets/images/badges/8cee688b-a7b8-49c0-8885-a2ea0d5ae601.png",
+      "featured": false
+    },
+    {
+      "id": "a20c2bd6-d3d7-48cc-9502-434179474762",
+      "name": "Copilot Developer Camp - Agent Contributor - Microsoft 365 & Power Platform Community",
+      "description": "The Agent Contributor badge is awarded to developers who create sample solutions on top of Microsoft 365 Copilot and/or Work IQ and that share those samples with the community in the Community Sample Solution Gallery (https://aka.ms/community/samples).",
+      "url": "https://www.credly.com/org/m365pnp/badge/copilot-developer-camp-agent-contributor-microsoft-",
+      "image": "../assets/images/badges/a20c2bd6-d3d7-48cc-9502-434179474762.png",
+      "featured": false
+    },
+    {
+      "id": "3b40b37d-f282-4ab7-b826-db9f92d8688b",
+      "name": "Copilot Developer Camp - Ideathon Winner - Microsoft 365 & Power Platform Community",
+      "description": "The Ideathon Winner badge is awarded to community members who attend in-person Copilot Dev Camp events and win the prize for the best agent idea or implementation during the event’s Ideathon.",
+      "url": "https://www.credly.com/org/m365pnp/badge/copilot-developer-camp-ideathon-winner-microsoft-36",
+      "image": "../assets/images/badges/3b40b37d-f282-4ab7-b826-db9f92d8688b.png",
+      "featured": false
+    },
+    {
+      "id": "da15bd64-1dbb-49d3-9026-ac3c5d82402f",
+      "name": "Copilot Developer Camp - Immersive Learner - Microsoft 365 & Power Platform Community",
+      "description": "The Immersive Learner badge is awarded to community members who attend in-person Copilot Dev Camp events and learned how to extend Microsoft 365 Copilot with custom agents.",
+      "url": "https://www.credly.com/org/m365pnp/badge/copilot-developer-camp-immersive-learner-microsoft-",
+      "image": "../assets/images/badges/da15bd64-1dbb-49d3-9026-ac3c5d82402f.png",
+      "featured": false
+    },
+    {
+      "id": "5be24ad9-4740-417b-90e2-e597e7e5ea1e",
+      "name": "SharePoint Skills - Microsoft 365 & Power Platform Community 2026",
+      "description": "SharePoint Skills badge earners contributed to the Microsoft 365 & Power Platform Community - SharePoint Skills community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/sharepoint-skills-microsoft-365-power-platform-comm",
+      "image": "../assets/images/badges/5be24ad9-4740-417b-90e2-e597e7e5ea1e.png",
+      "featured": false
     }
   ]
 }
