@@ -380,7 +380,7 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
   gap: 0.75rem;
 }
 
-.badge-card h3 { margin: 0; font-size: clamp(0.85rem, 1vw, 1rem); line-height: 1.3; }
+.badge-card h3 { margin: 0; font-size: clamp(1rem, 1.2vw, 1.2rem); line-height: 1.3; }
 .featured-badge .badge-card h3 { font-size: clamp(1rem, 1.3vw, 1.2rem); }
 .badge-card .text-link { font-size: 0.78rem; text-decoration: none; }
 .badge-card .text-link:hover { text-decoration: underline; }
