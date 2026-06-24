@@ -347,56 +347,63 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
   background-image: url("https://pnp.github.io/images/side-bg-right.webp"), url("https://pnp.github.io/images/side-bg-left.webp");
 }
 
-.featured-badge { max-width: 104rem; margin: 0 auto 18px; }
+.featured-badge { display: flex; justify-content: center; margin-bottom: 2rem; }
 .catalog-link { max-width: 104rem; margin: 30px auto 0; }
 
 .badge-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: clamp(1.5rem, 3vw, 3rem);
+  gap: clamp(1.25rem, 2.5vw, 2.5rem);
   max-width: 104rem;
   margin: 0 auto;
 }
 
 .badge-card {
   display: flex;
-  gap: 23px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
   border-radius: 1rem;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(15px);
   box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.18);
-  padding: 25px;
+  padding: 1.5rem 1.25rem;
 }
-.featured-badge .badge-card { align-items: center; background: rgba(185, 220, 210, 0.7); }
+.featured-badge .badge-card {
+  background: rgba(185, 220, 210, 0.7);
+  padding: 2rem 2.5rem;
+  min-width: 260px;
+  max-width: 320px;
+}
 
-.badge-card h3 { margin-bottom: 11px; }
-.badge-card p { color: var(--warm-gray); font-size: 0.95rem; }
+.badge-card h3 { margin: 0; font-size: clamp(0.85rem, 1vw, 1rem); line-height: 1.3; }
 
 .badge-card__monogram {
-  flex: 0 0 60px;
-  width: 60px; height: 60px;
+  flex: 0 0 100px;
+  width: 100px; height: 100px;
   display: grid;
   place-items: center;
   border-radius: 50%;
   background: var(--blue);
   color: #fff;
   font-weight: 800;
-  font-size: 1rem;
-}
-.featured-badge .badge-card__monogram {
-  flex-basis: 90px;
-  width: 90px; height: 90px;
-  background: var(--dark-blue);
   font-size: 1.4rem;
 }
+.featured-badge .badge-card__monogram {
+  flex-basis: 160px;
+  width: 160px; height: 160px;
+  background: var(--dark-blue);
+  font-size: 2rem;
+}
 .badge-card__image {
-  flex: 0 0 60px;
-  width: 60px; height: 60px;
+  flex: 0 0 100px;
+  width: 100px; height: 100px;
   object-fit: contain;
 }
 .featured-badge .badge-card__image {
-  flex-basis: 90px;
-  width: 90px; height: 90px;
+  flex: 0 0 160px;
+  width: 160px; height: 160px;
 }
 
 /* ── Footer ── */
@@ -460,8 +467,9 @@ footer {
 
 @media (max-width: 420px) {
   h1 { font-size: 2.5rem; }
-  .badge-card { gap: 16px; padding: 20px; }
-  .badge-card__monogram { flex-basis: 48px; width: 48px; height: 48px; font-size: 0.8rem; }
+  .badge-card { padding: 1.25rem 1rem; }
+  .badge-card__monogram { flex-basis: 72px; width: 72px; height: 72px; font-size: 1rem; }
+  .badge-card__image { flex-basis: 72px; width: 72px; height: 72px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
