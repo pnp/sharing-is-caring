@@ -127,10 +127,9 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
 .hero {
   display: grid;
   width: 100%;
-  min-height: 52vh;
   max-width: 1920px;
   margin: 0 auto;
-  padding: calc(72px + 2vw) 4vw 4vw;
+  padding: calc(72px + 2vw) 4vw 3vw;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   gap: 6vw;
   background-color: var(--light-black);
