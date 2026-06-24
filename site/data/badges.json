@@ -1,0 +1,37 @@
+{
+  "updated": "2026-06-24",
+  "organizationUrl": "https://www.credly.com/organizations/m365pnp/badges",
+  "badges": [
+    {
+      "id": "sharing-is-caring-contributor-2022",
+      "name": "PnP Sharing Is Caring Contributor",
+      "description": "Recognition for contributing to the Sharing Is Caring community.",
+      "url": "https://www.credly.com/org/m365pnp/badge/sharing-is-caring-contributor-2022",
+      "featured": true
+    },
+    {
+      "id": "community-contributor-2022",
+      "name": "Community Contributor",
+      "description": "Recognition for community contributions.",
+      "url": "https://www.credly.com/org/m365pnp/badge/community-contributor-2022"
+    },
+    {
+      "id": "pnp-maintainer-2022",
+      "name": "PnP Maintainer",
+      "description": "Recognition for maintaining a PnP project.",
+      "url": "https://www.credly.com/org/m365pnp/badge/pnp-maintainer-2022"
+    },
+    {
+      "id": "pnp-blog-author-2022",
+      "name": "PnP Blog Author",
+      "description": "Recognition for sharing knowledge through PnP community content.",
+      "url": "https://www.credly.com/org/m365pnp/badge/pnp-blog-author-2022"
+    },
+    {
+      "id": "community-call-presenter",
+      "name": "PnP Community Call Presenter",
+      "description": "Recognition for presenting to the Microsoft 365 and Power Platform community.",
+      "url": "https://www.credly.com/org/m365pnp/badge/m365-platform-community-pnp-call-presenter"
+    }
+  ]
+}

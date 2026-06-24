@@ -1,0 +1,34 @@
+name: Sync Credly Badges
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Every Monday at 06:00 UTC
+  workflow_dispatch:        # Manual trigger from Actions tab
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync badge templates from Credly
+        env:
+          CREDLY_TOKEN: ${{ secrets.SIC_CREDLY_BADGES }}
+          CREDLY_ORG_ID: ${{ vars.CREDLY_ORG_ID }}
+        run: node scripts/sync-badges.js
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/data/badges.json site/assets/images/badges/
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: sync Credly badge data [skip ci]"
+          git push
