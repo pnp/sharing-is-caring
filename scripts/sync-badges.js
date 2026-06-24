@@ -68,9 +68,18 @@ function download(url, dest) {
   return new Promise((resolve, reject) => {
     const parsed = new URL(url);
     const mod = parsed.protocol === 'https:' ? https : require('http');
-    mod.get(url, (res) => {
+    const options = {
+      hostname: parsed.hostname,
+      path: parsed.pathname + parsed.search,
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; SIC-badge-sync/1.0)' },
+    };
+    mod.get(options, (res) => {
       if (res.statusCode === 301 || res.statusCode === 302) {
         return download(res.headers.location, dest).then(resolve).catch(reject);
+      }
+      if (res.statusCode !== 200) {
+        res.resume();
+        return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
       }
       const file = fs.createWriteStream(dest);
       res.pipe(file);
