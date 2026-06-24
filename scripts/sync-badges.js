@@ -11,6 +11,17 @@ const fs = require('fs');
 const path = require('path');
 const { URL } = require('url');
 
+// Load .env from repo root when running locally (no-op if file absent or vars already set)
+const envFile = path.resolve(__dirname, '../.env');
+if (fs.existsSync(envFile)) {
+  fs.readFileSync(envFile, 'utf8').split('\n').forEach((line) => {
+    const [key, ...rest] = line.split('=');
+    if (key && rest.length && !process.env[key.trim()]) {
+      process.env[key.trim()] = rest.join('=').trim();
+    }
+  });
+}
+
 const ORG_ID = process.env.CREDLY_ORG_ID;
 const TOKEN = process.env.CREDLY_TOKEN;
 
