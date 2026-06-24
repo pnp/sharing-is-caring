@@ -80,13 +80,18 @@ async function renderSessions() {
   }
 }
 
+function badgeDisplayName(name) {
+  return name.replace(/\s*-\s*Microsoft 365 & Power Platform Community.*$/i, '').trim();
+}
+
 function badgeCard(badge) {
+  const label = badgeDisplayName(badge.name);
   const visual = badge.image
     ? `<img class="badge-card__image" src="${escapeHtml(badge.image)}" alt="${escapeHtml(badge.name)}" loading="lazy">`
-    : `<div class="badge-card__monogram" aria-hidden="true">${escapeHtml(badge.name).split(' ').slice(0, 2).map((word) => word[0]).join('')}</div>`;
+    : `<div class="badge-card__monogram" aria-hidden="true">${escapeHtml(label).split(' ').slice(0, 2).map((word) => word[0]).join('')}</div>`;
   return `<article class="badge-card">
     ${visual}
-    <div><h3>${escapeHtml(badge.name)}</h3><p>${escapeHtml(badge.description || 'A Microsoft 365 & Power Platform Community recognition badge.')}</p>
+    <div><h3>${escapeHtml(label)}</h3>
     <a class="text-link" href="${escapeHtml(badge.url)}" target="_blank" rel="noopener noreferrer">View on Credly <span aria-hidden="true">→</span></a></div>
   </article>`;
 }
