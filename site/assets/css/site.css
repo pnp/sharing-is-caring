@@ -123,6 +123,18 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
 .text-link { font-weight: 750; text-decoration-thickness: 1px; }
 .text-link:hover { color: var(--blue); }
 
+/* Suppress the tweaks.css section:target::before ghost element on grid containers.
+   That rule inserts a display:block pseudo-element as the first grid item, displacing
+   all real content. Use scroll-margin-top instead for the fixed-header offset. */
+.hero,
+.glass-band,
+.section {
+  scroll-margin-top: 80px;
+}
+.glass-band:target::before {
+  display: none;
+}
+
 /* ── Hero ── */
 .hero {
   display: grid;
