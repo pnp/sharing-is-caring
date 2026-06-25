@@ -453,17 +453,11 @@ footer {
 
 @media (max-width: 720px) {
   body { font-size: 16px; }
-  /* Keep header two-column but compress — hide the org name lines, shrink nav */
-  .wordmark span { display: none; }
-  .wordmark strong { font-size: 1rem; }
-  .site-header nav {
-    font-size: 0.7rem;
-    flex-wrap: nowrap;
-    padding: 0.25em 0.5vw 0.35em;
-  }
-  .site-header nav a { padding: 0.4em 0.3em; margin-inline: 0.1em; }
-  .hero { margin-top: 0; padding: 8vw 4vw; }
-  .recognition-hero { padding: 8vw 4vw; }
+  .site-header { grid-template-columns: 1fr; padding-block: 0.5rem; }
+  .site-header nav { justify-content: flex-start; background: transparent; box-shadow: none; backdrop-filter: none; border-radius: 0; padding-inline: 0; }
+  /* Hero top padding clears a stacked mobile header (wordmark + nav rows) */
+  .hero { padding: 140px 6vw 8vw; }
+  .recognition-hero { padding: 140px 6vw 8vw; }
   .section { padding: 8vw 4vw; }
   .glass-band { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; gap: 1.5rem; }
