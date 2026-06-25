@@ -80,6 +80,35 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; 
   text-underline-offset: 0.25em;
 }
 
+/* Hamburger toggle — hidden on desktop */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+  align-self: center;
+  margin-right: 1rem;
+}
+.nav-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--dark-blue);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 /* ── Typography ── */
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { line-height: 1; }
@@ -493,11 +522,33 @@ footer {
 
 @media (max-width: 720px) {
   body { font-size: 16px; }
-  .site-header { grid-template-columns: 1fr; padding-block: 0.5rem; }
-  .site-header nav { justify-content: flex-start; background: transparent; box-shadow: none; backdrop-filter: none; border-radius: 0; padding-inline: 0; }
-  /* Hero top padding clears a stacked mobile header (wordmark + nav rows) */
-  .hero { padding: 175px 6vw 8vw; }
-  .recognition-hero { padding: 175px 6vw 8vw; }
+  .site-header { grid-template-columns: 1fr auto; padding-block: 0.5rem; }
+  .nav-toggle { display: flex; }
+  .site-header nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    background: #fff;
+    padding: 0.25rem 6vw 1.25rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-top: 2px solid rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+    backdrop-filter: none;
+  }
+  .site-header nav.open { display: flex; }
+  .site-header nav a {
+    margin-inline: 0;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    color: var(--dark-blue);
+    font-size: 1rem;
+  }
+  .site-header nav a:last-child { border-bottom: none; }
+  .hero { padding: 96px 6vw 8vw; }
+  .recognition-hero { padding: 96px 6vw 8vw; }
   .section { padding: 8vw 4vw; }
   .glass-band { grid-template-columns: 1fr; }
   .faq-groups { grid-template-columns: 1fr; }
@@ -517,4 +568,5 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   h1 { animation: none; background-position: 0 0; }
   .button { transition: none; }
+  .nav-toggle span { transition: none; }
 }

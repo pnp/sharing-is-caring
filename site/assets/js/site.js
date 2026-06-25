@@ -113,3 +113,20 @@ async function renderBadges() {
 
 renderSessions();
 renderBadges();
+
+// Hamburger menu
+(function () {
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-header nav');
+  if (!toggle || !nav) return;
+  function close() {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
+  document.addEventListener('click', (e) => { if (!e.target.closest('.site-header')) close(); });
+}());
