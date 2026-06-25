@@ -334,8 +334,7 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
 
 /* ── FAQ ── */
 #faq {
-  background-color: var(--off-white);
-  background-image: none;
+  background: #f5f3f7;
 }
 
 .faq-groups {
