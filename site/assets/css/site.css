@@ -333,6 +333,11 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
 .glass-band .text-link:hover { color: #fff; }
 
 /* ── FAQ ── */
+#faq {
+  background-color: var(--off-white);
+  background-image: none;
+}
+
 .faq-groups {
   display: grid;
   grid-template-columns: 1fr 1fr;
