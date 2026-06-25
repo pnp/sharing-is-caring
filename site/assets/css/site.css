@@ -370,7 +370,7 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
 .faq-group summary::-webkit-details-marker { display: none; }
 .faq-group summary::after { content: "+"; font-size: 1.3rem; font-weight: 400; flex-shrink: 0; color: var(--blue); }
 .faq-group details[open] summary::after { content: "−"; }
-.faq-group details p { margin: 0.65rem 0 0.25rem; color: var(--warm-gray); font-size: 0.95rem; line-height: 1.6; }
+.faq-group details p { margin: 0.65rem 0 0.25rem; color: rgba(30, 28, 40, 0.82); font-size: 0.95rem; line-height: 1.6; }
 
 /* ── Split layout ── */
 .split {
