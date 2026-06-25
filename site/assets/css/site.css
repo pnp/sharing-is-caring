@@ -462,7 +462,7 @@ footer {
   gap: 1rem;
   padding: 1.25rem 4vw;
   background-color: var(--off-white);
-  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-top: 2px solid rgba(0, 0, 0, 0.12);
 }
 .footer-social {
   display: flex;
