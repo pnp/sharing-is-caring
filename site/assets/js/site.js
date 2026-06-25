@@ -65,6 +65,9 @@ async function renderSessions() {
   try {
     const response = await fetch('data/sessions.csv');
     const sessions = parseCsv(await response.text()).filter((session) => session.enabled.toLowerCase() === 'true');
+    if (sessions.length === 1) host.classList.add('event-grid--single');
+    else if (sessions.length === 2) host.classList.add('event-grid--two');
+
     host.innerHTML = sessions.map((session) => `<article class="event-card ${session.featured === 'true' ? 'featured' : ''}">
       <div class="event-card__marker">${iconBar(session)}</div>
       <div class="event-card__content">

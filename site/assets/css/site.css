@@ -270,6 +270,8 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
   max-width: 104rem;
   margin: 0 auto;
 }
+.event-grid--single { grid-template-columns: 1fr; }
+.event-grid--two { grid-template-columns: repeat(2, 1fr); }
 
 .event-card {
   overflow: hidden;
