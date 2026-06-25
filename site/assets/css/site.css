@@ -332,6 +332,42 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
 .glass-band .text-link { color: rgba(212, 228, 236, 0.9); }
 .glass-band .text-link:hover { color: #fff; }
 
+/* ── FAQ ── */
+.faq-groups {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.faq-group h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
+}
+.faq-group details {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.9rem 0;
+}
+.faq-group details:first-of-type { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+.faq-group summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--dark-blue);
+}
+.faq-group summary::-webkit-details-marker { display: none; }
+.faq-group summary::after { content: "+"; font-size: 1.3rem; font-weight: 400; flex-shrink: 0; color: var(--blue); }
+.faq-group details[open] summary::after { content: "−"; }
+.faq-group details p { margin: 0.65rem 0 0.25rem; color: var(--warm-gray); font-size: 0.95rem; line-height: 1.6; }
+
 /* ── Split layout ── */
 .split {
   display: grid;
@@ -460,6 +496,7 @@ footer {
   .recognition-hero { padding: 175px 6vw 8vw; }
   .section { padding: 8vw 4vw; }
   .glass-band { grid-template-columns: 1fr; }
+  .faq-groups { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; gap: 1.5rem; }
   .event-grid, .badge-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; }
