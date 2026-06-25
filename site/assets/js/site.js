@@ -129,6 +129,7 @@ renderBadges();
   toggle.addEventListener('click', () => {
     const isOpen = nav.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(isOpen));
+    toggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
   });
   nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', close));
   document.addEventListener('click', (e) => { if (!e.target.closest('.site-header')) close(); });
