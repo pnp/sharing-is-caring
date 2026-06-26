@@ -1,0 +1,97 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VTIMEZONE
+TZID:Pacific Standard Time
+BEGIN:STANDARD
+DTSTART:16011104T020000
+RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:16010311T020000
+RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20260626T031202Z
+DESCRIPTION:Got a question about contributing to the Microsoft 365 & Power 
+	Platform community? This is the place to bring it.\n\nOffice Hours is an o
+	pen\, informal drop-in session held every other Tuesday at 9:30 AM PT...a 
+	half hour after the weekly community call.\nNo agenda\, no prerequisites\,
+	 and no wrong questions.\nWhether you're figuring out your first contribut
+	ion\, working through something specific\, or just want to see what others
+	 are building\, you're welcome here.\nDrop in when it works for you and po
+	p out when you're done. The full session runs one hour.\nWhat to bring: An
+	y question on your mind...GitHub\, Pull Requests\, community calls\, blog 
+	posts\, documentation\, presenting\, badges\, or anything else related to 
+	contributing.\nJoin the session: https://pnp.ms/sic-officehours-join <http
+	s://pnp.ms/sic-officehours-join> \n<https://pnp.ms/sic-officehours-join> M
+	ore info: https://pnp.ms/sharingiscaring <https://pnp.ms/sharingiscaring> 
+	\n
+DTEND;TZID="Pacific Standard Time":20260630T103000
+DTSTAMP:20260626T025313Z
+DTSTART;TZID="Pacific Standard Time":20260630T093000
+LAST-MODIFIED:20260626T031202Z
+ORGANIZER;CN="David Warner":invalid:nomail
+PRIORITY:5
+RRULE:FREQ=WEEKLY;INTERVAL=2;BYDAY=TU;WKST=SU
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Sharing is Caring - Office Hours - Microsoft 365 & P
+	ower Platform Community
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000589426AEEA04DD01000000000000000
+	010000000C8E48259AF1CBC4DAB65558E99F17AD8
+X-ALT-DESC;FMTTYPE=text/html:<html>\n<head>\n\n</head>\n<body>\n<div style=
+	"margin-bottom: 2.4pt\;">\n<p style="margin-right: 0in\; margin-bottom: 2.
+	4pt\; margin-left: 0in\;"><span style="color: black\;">Got a question abou
+	t contributing to the Microsoft 365 &amp\; Power Platform community? This 
+	is the place to bring it.</span></p>\n<div style="margin: 1em 0in 2.4pt\; 
+	color: black\;">Office Hours is an open\, informal drop-in session held ev
+	ery other Tuesday at 9:30 AM PT...a half hour after the weekly community c
+	all.</div>\n<div style="margin: 1em 0in 2.4pt\; color: black\;">No agenda\
+	, no prerequisites\, and no wrong questions.</div>\n<div style="margin: 1e
+	m 0in 2.4pt\; color: black\;">Whether you're figuring out your first contr
+	ibution\, working through something specific\, or just want to see what ot
+	hers are building\, you're welcome here.</div>\n<div style="margin: 1em 0i
+	n 2.4pt\; color: black\;">Drop in when it works for you and pop out when y
+	ou're done. The full session runs one hour.</div>\n<div style="margin: 1em
+	 0in 2.4pt\; color: black\;">What to bring: Any question on your mind...Gi
+	tHub\, Pull Requests\, community calls\, blog posts\, documentation\, pres
+	enting\, badges\, or anything else related to contributing.</div>\n<div st
+	yle="margin: 1em 0in 2.4pt\;"><span style="color: black\;">Join the sessio
+	n:\n</span><span style="color: rgb(55\, 148\, 255)\;"><a href="https://pnp
+	.ms/sic-officehours-join" target="_blank" id="OWA909409af-94ea-ec56-4c33-b
+	550893ddb4f" class="x_OWAAutoLink" rel="noopener noreferrer" data-auth="No
+	tApplicable" style="color: rgb(55\, 148\, 255)\; margin-top: 0px\; margin-
+	bottom: 0px\;"><u>https://pnp.ms/sic-officehours-join</u></a></span></div>
+	\n<div style="margin: 1em 0in 2.4pt\;"><span style="font-family: Aptos\, A
+	ptos_EmbeddedFont\, Aptos_MSFontService\, Calibri\, Helvetica\, sans-serif
+	\; font-size: 12pt\; color: rgb(55\, 148\, 255)\;"><a href="https://pnp.ms
+	/sic-officehours-join" target="_blank" id="OWA909409af-94ea-ec56-4c33-b550
+	893ddb4f" class="x_OWAAutoLink" rel="noopener noreferrer" data-auth="NotAp
+	plicable" style="color: rgb(55\, 148\, 255)\; margin-top: 0px\; margin-bot
+	tom: 0px\;"><u></u></a></span><span style="color: black\;">More\n info: </
+	span><span style="color: rgb(55\, 148\, 255)\;"><a href="https://pnp.ms/sh
+	aringiscaring" target="_blank" id="OWA0b05ea5a-12de-51f5-c5dd-f9ba21b6f526
+	" class="x_OWAAutoLink" rel="noopener noreferrer" data-auth="NotApplicable
+	" style="color: rgb(55\, 148\, 255)\; margin-top: 0px\; margin-bottom: 0px
+	\;"><u>https://pnp.ms/sharingiscaring</u></a></span></div>\n</div>\n</body
+	>\n</html>\n
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-APPTLASTSEQUENCE:1
+X-MS-OLK-APPTSEQTIME:20260626T024539Z
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
