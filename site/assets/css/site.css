@@ -567,8 +567,48 @@ footer {
   .badge-card__image { flex-basis: 56px; width: 56px; height: 56px; }
 }
 
+/* ── Session live status ── */
+.event-card.live {
+  outline: 3px solid rgba(73, 197, 177, 0.9);
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.26), 0 0 0 6px rgba(73, 197, 177, 0.12), 0 8px 32px rgba(73, 197, 177, 0.28);
+}
+
+.session-status {
+  display: flex;
+  align-items: center;
+  gap: 0.45em;
+  margin: 0.4rem 0 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.session-status:empty { display: none; }
+
+.session-status--live { color: rgb(73, 197, 177); }
+
+.session-status--live::before {
+  content: '';
+  flex-shrink: 0;
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  background: currentColor;
+  animation: pulse-live 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-live {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.7); }
+}
+
+.session-status--countdown { color: var(--dark-blue); }
+
+.session-status--next { color: var(--warm-gray); font-weight: 400; }
+
 @media (prefers-reduced-motion: reduce) {
   h1 { animation: none; background-position: 0 0; }
   .button { transition: none; }
   .nav-toggle span { transition: none; }
+  .session-status--live::before { animation: none; }
 }

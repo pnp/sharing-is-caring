@@ -59,6 +59,122 @@ function sessionActions(session) {
   return actions.join('');
 }
 
+// ── Live session status ──
+
+function zonedToUtc(dateStr, timeStr, timezone) {
+  const [year, month, day] = dateStr.split('-').map(Number);
+  const [hour, minute] = timeStr.split(':').map(Number);
+  // Initial guess: treat as UTC-8 (PST worst case)
+  let utcMs = Date.UTC(year, month - 1, day, hour + 8, minute);
+  const parts = Object.fromEntries(
+    new Intl.DateTimeFormat('en-US', { timeZone: timezone, hour: 'numeric', minute: 'numeric', hour12: false })
+      .formatToParts(new Date(utcMs)).map((p) => [p.type, p.value])
+  );
+  // Correct for actual offset (handles PDT vs PST automatically)
+  return utcMs + ((hour - parseInt(parts.hour)) * 60 + (minute - parseInt(parts.minute))) * 60000;
+}
+
+function addDaysToDateStr(dateStr, days) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  const date = new Date(Date.UTC(y, m - 1, d + days));
+  return `${date.getUTCFullYear()}-${String(date.getUTCMonth() + 1).padStart(2, '0')}-${String(date.getUTCDate()).padStart(2, '0')}`;
+}
+
+function findNextOccurrence(anchor, intervalWeeks, startTimeStr, durationMinutes, nowMs) {
+  const anchorMs = zonedToUtc(anchor, startTimeStr, 'America/Los_Angeles');
+  const rawN = Math.max(0, Math.floor((nowMs - anchorMs) / (intervalWeeks * 7 * 24 * 60 * 60 * 1000)));
+  for (const n of [rawN - 1, rawN, rawN + 1, rawN + 2]) {
+    if (n < 0) continue;
+    const startMs = zonedToUtc(addDaysToDateStr(anchor, n * intervalWeeks * 7), startTimeStr, 'America/Los_Angeles');
+    const endMs = startMs + durationMinutes * 60000;
+    if (nowMs <= endMs) return { startMs, endMs };
+  }
+  return null;
+}
+
+function computeLiveState(session, nowMs) {
+  const { recurrence_anchor: anchor, recurrence_weeks: weeks, start_time: startTime, duration_minutes: durStr, countdown_minutes: cdStr } = session;
+  if (!anchor || !weeks || !startTime) return null;
+  const occ = findNextOccurrence(anchor, parseInt(weeks), startTime, parseInt(durStr) || 60, nowMs);
+  if (!occ) return null;
+  const msUntilStart = occ.startMs - nowMs;
+  if (nowMs >= occ.startMs) return { type: 'live' };
+  if (msUntilStart <= (parseInt(cdStr) || 60) * 60000) return { type: 'countdown', msUntilStart, startMs: occ.startMs };
+  return { type: 'next', startMs: occ.startMs };
+}
+
+function formatCountdown(ms) {
+  const totalSec = Math.ceil(ms / 1000);
+  const h = Math.floor(totalSec / 3600);
+  const m = Math.floor((totalSec % 3600) / 60);
+  const s = totalSec % 60;
+  if (h > 0) return `${h}h ${m}m`;
+  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+}
+
+function formatNextDate(startMs) {
+  return new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/Los_Angeles', weekday: 'short', month: 'short', day: 'numeric'
+  }).format(new Date(startMs));
+}
+
+function liveDataAttrs(session) {
+  const { recurrence_anchor, recurrence_weeks, start_time, duration_minutes, countdown_minutes } = session;
+  if (!recurrence_anchor || !recurrence_weeks || !start_time) return '';
+  return ` data-live-anchor="${escapeHtml(recurrence_anchor)}" data-live-weeks="${escapeHtml(recurrence_weeks)}" data-live-start="${escapeHtml(start_time)}" data-live-duration="${escapeHtml(duration_minutes || '60')}" data-live-countdown="${escapeHtml(countdown_minutes || '60')}"`;
+}
+
+function initLiveStatus() {
+  const cards = [...document.querySelectorAll('[data-live-anchor]')];
+  if (!cards.length) return;
+
+  const preview = new URLSearchParams(location.search).get('preview');
+
+  function getFakeNow(card) {
+    const { liveAnchor, liveWeeks, liveStart, liveDuration, liveCountdown } = card.dataset;
+    const occ = findNextOccurrence(liveAnchor, parseInt(liveWeeks), liveStart, parseInt(liveDuration) || 60, Date.now());
+    if (!occ) return Date.now();
+    if (preview === 'live') return occ.startMs + 15 * 60000;
+    if (preview === 'countdown') return occ.startMs - Math.floor((parseInt(liveCountdown) || 60) * 0.75) * 60000;
+    return occ.startMs - 3 * 24 * 60 * 60 * 1000;
+  }
+
+  function applyState(card, state) {
+    const el = card.querySelector('.session-status');
+    if (!el) return;
+    card.classList.remove('live');
+    el.className = 'session-status';
+    if (!state) { el.textContent = ''; return; }
+    if (state.type === 'live') {
+      card.classList.add('live');
+      el.classList.add('session-status--live');
+      el.textContent = 'Live now';
+    } else if (state.type === 'countdown') {
+      el.classList.add('session-status--countdown');
+      el.textContent = `Starts in ${formatCountdown(state.msUntilStart)}`;
+    } else {
+      el.classList.add('session-status--next');
+      el.textContent = `Next: ${formatNextDate(state.startMs)}`;
+    }
+  }
+
+  function updateAll() {
+    cards.forEach((card) => {
+      const session = {
+        recurrence_anchor: card.dataset.liveAnchor,
+        recurrence_weeks: card.dataset.liveWeeks,
+        start_time: card.dataset.liveStart,
+        duration_minutes: card.dataset.liveDuration,
+        countdown_minutes: card.dataset.liveCountdown
+      };
+      applyState(card, computeLiveState(session, preview ? getFakeNow(card) : Date.now()));
+    });
+  }
+
+  updateAll();
+  setInterval(updateAll, 1000);
+}
+
 async function renderSessions() {
   const host = document.querySelector('[data-sessions]');
   if (!host) return;
@@ -68,16 +184,19 @@ async function renderSessions() {
     if (sessions.length === 1) host.classList.add('event-grid--single');
     else if (sessions.length === 2) host.classList.add('event-grid--two');
 
-    host.innerHTML = sessions.map((session) => `<article class="event-card ${session.featured === 'true' ? 'featured' : ''}">
+    host.innerHTML = sessions.map((session) => `<article class="event-card ${session.featured === 'true' ? 'featured' : ''}"${liveDataAttrs(session)}>
       <div class="event-card__marker">${iconBar(session)}</div>
       <div class="event-card__content">
         <p class="eyebrow">${escapeHtml(session.category)}</p>
         <h3>${escapeHtml(session.title)}</h3>
         <p>${escapeHtml(session.summary)}</p>
         <p class="event-card__schedule">${escapeHtml(session.schedule)}</p>
+        <p class="session-status" aria-live="polite" aria-atomic="true"></p>
         <div class="button-row">${sessionActions(session)}</div>
       </div>
     </article>`).join('') || '<p>No sessions are currently scheduled. Please check back soon.</p>';
+
+    initLiveStatus();
   } catch {
     host.innerHTML = '<p>Session information is temporarily unavailable. Please check back soon.</p>';
   }
