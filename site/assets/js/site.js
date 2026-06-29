@@ -163,7 +163,8 @@ function initLiveStatus() {
     } else {
       el.classList.add('session-status--next');
       const prefix = label ? `Next ${label}: ` : 'Next: ';
-      el.textContent = `${prefix}${formatNextDate(state.startMs)}`;
+      const icon = `<span class="status-cal-icon" aria-hidden="true">${SESSION_ICONS.calendar.svg}</span>`;
+      el.innerHTML = `${icon}${escapeHtml(`${prefix}${formatNextDate(state.startMs)}`)}`;
     }
   }
 
