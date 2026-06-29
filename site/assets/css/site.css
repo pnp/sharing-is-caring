@@ -593,7 +593,7 @@ footer {
   width: 0.6em;
   height: 0.6em;
   border-radius: 50%;
-  background: currentColor;
+  background: #e5373d;
   animation: pulse-live 1.5s ease-in-out infinite;
 }
 
@@ -604,7 +604,7 @@ footer {
 
 .session-status--countdown { color: var(--dark-blue); }
 
-.session-status--next { color: var(--warm-gray); font-weight: 400; }
+.session-status--next { color: var(--warm-gray); font-weight: 400; font-size: 0.92rem; padding-left: 1rem; }
 
 @media (prefers-reduced-motion: reduce) {
   h1 { animation: none; background-position: 0 0; }

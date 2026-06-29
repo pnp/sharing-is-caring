@@ -130,13 +130,19 @@ function initLiveStatus() {
 
   const preview = new URLSearchParams(location.search).get('preview');
 
-  function getFakeNow(card) {
+  // Snapshot fake time offset once so countdown ticks in real time during preview
+  let fakeNowOffset = 0;
+  if (preview) {
+    const card = cards[0];
     const { liveAnchor, liveWeeks, liveStart, liveDuration, liveCountdown } = card.dataset;
     const occ = findNextOccurrence(liveAnchor, parseInt(liveWeeks), liveStart, parseInt(liveDuration) || 60, Date.now());
-    if (!occ) return Date.now();
-    if (preview === 'live') return occ.startMs + 15 * 60000;
-    if (preview === 'countdown') return occ.startMs - Math.floor((parseInt(liveCountdown) || 60) * 0.75) * 60000;
-    return occ.startMs - 3 * 24 * 60 * 60 * 1000;
+    if (occ) {
+      let fakeNow;
+      if (preview === 'live') fakeNow = occ.startMs + 15 * 60000;
+      else if (preview === 'countdown') fakeNow = occ.startMs - Math.floor((parseInt(liveCountdown) || 60) * 0.75) * 60000;
+      else fakeNow = occ.startMs - 3 * 24 * 60 * 60 * 1000;
+      fakeNowOffset = fakeNow - Date.now();
+    }
   }
 
   function applyState(card, state) {
@@ -159,6 +165,7 @@ function initLiveStatus() {
   }
 
   function updateAll() {
+    const nowMs = Date.now() + fakeNowOffset;
     cards.forEach((card) => {
       const session = {
         recurrence_anchor: card.dataset.liveAnchor,
@@ -167,7 +174,7 @@ function initLiveStatus() {
         duration_minutes: card.dataset.liveDuration,
         countdown_minutes: card.dataset.liveCountdown
       };
-      applyState(card, computeLiveState(session, preview ? getFakeNow(card) : Date.now()));
+      applyState(card, computeLiveState(session, nowMs));
     });
   }
 
