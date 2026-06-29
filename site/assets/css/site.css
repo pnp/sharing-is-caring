@@ -584,7 +584,7 @@ footer {
 
 .session-status:empty { display: none; }
 
-.event-card__content > p.session-status--live { color: rgb(73, 197, 177); }
+.event-card__content > p.session-status--live { color: var(--dark-blue); font-size: 1rem; font-weight: 700; }
 
 .session-status--live::before {
   content: '';
@@ -602,9 +602,9 @@ footer {
   50% { opacity: 0.3; transform: scale(0.7); }
 }
 
-.event-card__content > p.session-status--countdown { color: var(--dark-blue); }
+.event-card__content > p.session-status--countdown { color: var(--dark-blue); font-size: 1rem; font-weight: 700; padding-left: 0.25rem; }
 
-.event-card__content > p.session-status--next { color: var(--dark-blue); font-weight: 700; font-size: 1rem; }
+.event-card__content > p.session-status--next { color: var(--dark-blue); font-weight: 700; font-size: 1rem; padding-left: 0.25rem; }
 
 .status-cal-icon {
   display: inline-flex;

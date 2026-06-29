@@ -159,7 +159,9 @@ function initLiveStatus() {
     } else if (state.type === 'countdown') {
       el.classList.add('session-status--countdown');
       const prefix = label ? `Next ${label} · ` : '';
-      el.textContent = `${prefix}Starts in ${formatCountdown(state.msUntilStart)}`;
+      const icon = `<span class="status-cal-icon" aria-hidden="true">${SESSION_ICONS.calendar.svg}</span>`;
+      el.innerHTML = `${icon}${escapeHtml(`${prefix}Starts in ${formatCountdown(state.msUntilStart)}`)}`;
+
     } else {
       el.classList.add('session-status--next');
       const prefix = label ? `Next ${label}: ` : 'Next: ';
