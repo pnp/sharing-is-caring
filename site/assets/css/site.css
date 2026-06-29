@@ -584,7 +584,7 @@ footer {
 
 .session-status:empty { display: none; }
 
-.event-card__content > p.session-status--live { color: var(--dark-blue); font-size: 1rem; font-weight: 700; }
+.event-card__content > p.session-status--live { color: var(--dark-blue); font-size: 1rem; font-weight: 700; padding-left: 0.25rem; }
 
 .session-status--live::before {
   content: '';
