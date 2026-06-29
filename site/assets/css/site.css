@@ -584,7 +584,7 @@ footer {
 
 .session-status:empty { display: none; }
 
-.session-status--live { color: rgb(73, 197, 177); }
+.event-card__content > p.session-status--live { color: rgb(73, 197, 177); }
 
 .session-status--live::before {
   content: '';
@@ -602,9 +602,9 @@ footer {
   50% { opacity: 0.3; transform: scale(0.7); }
 }
 
-.session-status--countdown { color: var(--dark-blue); }
+.event-card__content > p.session-status--countdown { color: var(--dark-blue); }
 
-.session-status--next { color: var(--dark-blue); font-weight: 600; font-size: 0.9rem; }
+.event-card__content > p.session-status--next { color: var(--dark-blue); font-weight: 600; font-size: 0.9rem; }
 
 @media (prefers-reduced-motion: reduce) {
   h1 { animation: none; background-position: 0 0; }
