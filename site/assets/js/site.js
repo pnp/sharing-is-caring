@@ -119,9 +119,9 @@ function formatNextDate(startMs) {
 }
 
 function liveDataAttrs(session) {
-  const { recurrence_anchor, recurrence_weeks, start_time, duration_minutes, countdown_minutes } = session;
+  const { recurrence_anchor, recurrence_weeks, start_time, duration_minutes, countdown_minutes, status_label } = session;
   if (!recurrence_anchor || !recurrence_weeks || !start_time) return '';
-  return ` data-live-anchor="${escapeHtml(recurrence_anchor)}" data-live-weeks="${escapeHtml(recurrence_weeks)}" data-live-start="${escapeHtml(start_time)}" data-live-duration="${escapeHtml(duration_minutes || '60')}" data-live-countdown="${escapeHtml(countdown_minutes || '60')}"`;
+  return ` data-live-anchor="${escapeHtml(recurrence_anchor)}" data-live-weeks="${escapeHtml(recurrence_weeks)}" data-live-start="${escapeHtml(start_time)}" data-live-duration="${escapeHtml(duration_minutes || '60')}" data-live-countdown="${escapeHtml(countdown_minutes || '60')}" data-live-label="${escapeHtml(status_label || '')}"`;
 }
 
 function initLiveStatus() {
@@ -151,16 +151,19 @@ function initLiveStatus() {
     card.classList.remove('live');
     el.className = 'session-status';
     if (!state) { el.textContent = ''; return; }
+    const label = card.dataset.liveLabel || '';
     if (state.type === 'live') {
       card.classList.add('live');
       el.classList.add('session-status--live');
       el.textContent = 'Live now';
     } else if (state.type === 'countdown') {
       el.classList.add('session-status--countdown');
-      el.textContent = `Starts in ${formatCountdown(state.msUntilStart)}`;
+      const prefix = label ? `Next ${label} · ` : '';
+      el.textContent = `${prefix}Starts in ${formatCountdown(state.msUntilStart)}`;
     } else {
       el.classList.add('session-status--next');
-      el.textContent = `Next: ${formatNextDate(state.startMs)}`;
+      const prefix = label ? `Next ${label}: ` : 'Next: ';
+      el.textContent = `${prefix}${formatNextDate(state.startMs)}`;
     }
   }
 

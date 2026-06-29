@@ -604,7 +604,7 @@ footer {
 
 .session-status--countdown { color: var(--dark-blue); }
 
-.session-status--next { color: var(--warm-gray); font-weight: 400; font-size: 0.92rem; padding-left: 1rem; }
+.session-status--next { color: var(--dark-blue); font-weight: 600; font-size: 0.9rem; }
 
 @media (prefers-reduced-motion: reduce) {
   h1 { animation: none; background-position: 0 0; }
