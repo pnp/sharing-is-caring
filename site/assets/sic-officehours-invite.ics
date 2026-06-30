@@ -35,9 +35,9 @@ DESCRIPTION:Got a question about contributing to the Microsoft 365 & Power
 	s://pnp.ms/sic-officehours-join> \n<https://pnp.ms/sic-officehours-join> M
 	ore info: https://pnp.ms/sharingiscaring <https://pnp.ms/sharingiscaring> 
 	\n
-DTEND;TZID="Pacific Standard Time":20260630T103000
+DTEND;TZID="Pacific Standard Time":20260714T103000
 DTSTAMP:20260626T025313Z
-DTSTART;TZID="Pacific Standard Time":20260630T093000
+DTSTART;TZID="Pacific Standard Time":20260714T093000
 LAST-MODIFIED:20260626T031202Z
 ORGANIZER;CN="David Warner":invalid:nomail
 PRIORITY:5
