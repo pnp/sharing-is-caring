@@ -31,8 +31,8 @@ if (!ORG_ID || !TOKEN) {
 }
 
 const CURRENT_YEAR = new Date().getFullYear();
-const BADGES_JSON = path.resolve(__dirname, '../site/data/badges.json');
-const IMAGES_DIR = path.resolve(__dirname, '../site/assets/images/badges');
+const BADGES_JSON = path.resolve(__dirname, '../data/badges.json');
+const IMAGES_DIR = path.resolve(__dirname, '../assets/images/badges');
 
 fs.mkdirSync(IMAGES_DIR, { recursive: true });
 
