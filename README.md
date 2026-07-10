@@ -18,6 +18,10 @@ These samples are direct from the feature teams, [PnP team](https://aka.ms/m365p
 
 Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible.
 
+## GitHub Copilot
+
+This repository supports [GitHub Copilot](https://github.com/features/copilot) and the GitHub Copilot cloud agent. When you assign an issue to the Copilot agent, it will create a pull request and document its work and reasoning there. You can follow the agent's progress and see the conversation directly in the pull request thread.
+
 ## Code of Conduct
 
 This repository has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
