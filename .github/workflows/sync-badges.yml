@@ -1,0 +1,40 @@
+name: Sync Credly Badges
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out published site branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync badge templates from Credly
+        env:
+          CREDLY_TOKEN: ${{ secrets.SIC_CREDLY_BADGES }}
+          CREDLY_ORG_ID: ${{ vars.CREDLY_ORG_ID }}
+        run: node scripts/sync-badges.js
+
+      - name: Commit badge updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/badges.json assets/images/badges/
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "chore: sync Credly badge data [skip ci]"
+          git push origin gh-pages
