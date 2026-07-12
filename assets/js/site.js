@@ -219,16 +219,108 @@ function badgeDisplayName(name) {
   return name.replace(/\s*-\s*Microsoft 365 & Power Platform Community.*$/i, '').trim();
 }
 
-function badgeCard(badge) {
+const NEW_BADGE_DAYS = 30;
+
+function isNewBadge(badge) {
+  const publishedAt = badge.stateUpdatedAt || badge.createdAt;
+  if (!publishedAt) return false;
+  const publishedMs = new Date(publishedAt).getTime();
+  if (Number.isNaN(publishedMs)) return false;
+  return Date.now() - publishedMs <= NEW_BADGE_DAYS * 24 * 60 * 60 * 1000;
+}
+
+function badgeCard(badge, className = '', options = {}) {
+  const { showNew = true } = options;
   const label = badgeDisplayName(badge.name);
+  const classes = ['badge-card'];
+  if (className) classes.push(className);
+  const newBadge = showNew && isNewBadge(badge);
+  if (newBadge) classes.push('badge-card--new');
+  const newLabel = newBadge ? '<span class="badge-card__label">New</span>' : '';
   const visual = badge.image
     ? `<img class="badge-card__image" src="${escapeHtml(badge.image)}" alt="${escapeHtml(badge.name)}" loading="lazy">`
     : `<div class="badge-card__monogram" aria-hidden="true">${escapeHtml(label).split(' ').slice(0, 2).map((word) => word[0]).join('')}</div>`;
-  return `<article class="badge-card">
-    ${visual}
-    <div><h3>${escapeHtml(label)}</h3>
-    <a class="text-link" href="${escapeHtml(badge.url)}" target="_blank" rel="noopener noreferrer">View on Credly <span aria-hidden="true">→</span></a></div>
+  return `<article class="${classes.join(' ')}">
+    <div class="badge-card__inner">
+      ${visual}
+      <div><h3>${escapeHtml(label)}</h3>
+      ${newLabel}
+      <a class="text-link" href="${escapeHtml(badge.url)}" target="_blank" rel="noopener noreferrer">View on Credly <span aria-hidden="true">→</span></a></div>
+    </div>
   </article>`;
+}
+
+function renderFeaturedBadges(feature, badges) {
+  if (!feature || !badges.length) return;
+
+  const featuredBadges = badges
+    .filter((badge) => badge.featured)
+    .sort((a, b) => {
+      const orderA = Number.isFinite(a.featuredOrder) ? a.featuredOrder : Number.MAX_SAFE_INTEGER;
+      const orderB = Number.isFinite(b.featuredOrder) ? b.featuredOrder : Number.MAX_SAFE_INTEGER;
+      if (orderA !== orderB) return orderA - orderB;
+      return badgeDisplayName(a.name).localeCompare(badgeDisplayName(b.name), 'en', { sensitivity: 'base', numeric: true });
+    });
+  const slides = featuredBadges.length ? featuredBadges : [badges[0]];
+
+  if (slides.length === 1) {
+    feature.innerHTML = badgeCard(slides[0], 'badge-card--featured', { showNew: false });
+    return;
+  }
+
+  feature.innerHTML = `<div class="featured-badge__carousel">
+    <button class="featured-badge__arrow" type="button" data-featured-prev aria-label="Previous featured badge"><span aria-hidden="true">&lsaquo;</span></button>
+    <div class="featured-badge__stage" aria-live="polite"></div>
+    <button class="featured-badge__arrow" type="button" data-featured-next aria-label="Next featured badge"><span aria-hidden="true">&rsaquo;</span></button>
+  </div>
+  <div class="featured-badge__dots" role="tablist" aria-label="Featured badges">
+    ${slides.map((badge, index) => `<button type="button" data-featured-dot="${index}" aria-label="Show featured badge ${index + 1}: ${escapeHtml(badgeDisplayName(badge.name))}"></button>`).join('')}
+  </div>`;
+
+  const stage = feature.querySelector('.featured-badge__stage');
+  const dots = [...feature.querySelectorAll('[data-featured-dot]')];
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let current = 0;
+  let timer = null;
+
+  function showBadge(index) {
+    current = (index + slides.length) % slides.length;
+    stage.innerHTML = badgeCard(slides[current], 'badge-card--featured', { showNew: false });
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('active', dotIndex === current);
+      dot.setAttribute('aria-selected', String(dotIndex === current));
+    });
+  }
+
+  function stopRotation() {
+    if (timer) clearInterval(timer);
+    timer = null;
+  }
+
+  function startRotation() {
+    if (reduceMotion || timer) return;
+    timer = setInterval(() => showBadge(current + 1), 7000);
+  }
+
+  feature.querySelector('[data-featured-prev]').addEventListener('click', () => {
+    showBadge(current - 1);
+    stopRotation();
+  });
+  feature.querySelector('[data-featured-next]').addEventListener('click', () => {
+    showBadge(current + 1);
+    stopRotation();
+  });
+  dots.forEach((dot) => dot.addEventListener('click', () => {
+    showBadge(parseInt(dot.dataset.featuredDot, 10));
+    stopRotation();
+  }));
+  feature.addEventListener('mouseenter', stopRotation);
+  feature.addEventListener('mouseleave', startRotation);
+  feature.addEventListener('focusin', stopRotation);
+  feature.addEventListener('focusout', startRotation);
+
+  showBadge(0);
+  startRotation();
 }
 
 async function renderBadges() {
@@ -238,9 +330,8 @@ async function renderBadges() {
   try {
     const response = await fetch('../data/badges.json');
     const data = await response.json();
-    const featured = data.badges.find((badge) => badge.featured) || data.badges[0];
-    if (feature && featured) feature.innerHTML = badgeCard(featured);
-    gallery.innerHTML = data.badges.filter((badge) => badge !== featured).map(badgeCard).join('');
+    renderFeaturedBadges(feature, data.badges);
+    gallery.innerHTML = data.badges.map((badge) => badgeCard(badge)).join('');
   } catch {
     gallery.innerHTML = '<p>Badge information is temporarily unavailable. Visit our Credly catalog for the current list.</p>';
   }

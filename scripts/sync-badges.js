@@ -37,6 +37,25 @@ const IMAGES_DIR = path.resolve(__dirname, '../assets/images/badges');
 fs.mkdirSync(IMAGES_DIR, { recursive: true });
 
 const AUTH = Buffer.from(`${TOKEN}:`).toString('base64');
+const badgeNameSorter = new Intl.Collator('en', { sensitivity: 'base', numeric: true });
+const NEW_BADGE_DAYS = 30;
+const MS_PER_DAY = 24 * 60 * 60 * 1000;
+
+function badgeDisplayName(name) {
+  return name.replace(/\s*-\s*Microsoft 365 & Power Platform Community.*$/i, '').trim();
+}
+
+function badgePublishedMs(badge) {
+  const publishedAt = badge.stateUpdatedAt || badge.createdAt;
+  if (!publishedAt) return null;
+  const publishedMs = new Date(publishedAt).getTime();
+  return Number.isNaN(publishedMs) ? null : publishedMs;
+}
+
+function isNewBadge(badge, nowMs = Date.now()) {
+  const publishedMs = badgePublishedMs(badge);
+  return publishedMs !== null && nowMs - publishedMs <= NEW_BADGE_DAYS * MS_PER_DAY;
+}
 
 function get(url) {
   return new Promise((resolve, reject) => {
@@ -117,10 +136,16 @@ async function main() {
     console.log(`${templates.length} badges from ${CURRENT_YEAR}`);
   }
 
-  // Load existing JSON to preserve featured flags
+  // Load existing JSON to preserve editorial badge settings.
   let existing = { badges: [] };
   try { existing = JSON.parse(fs.readFileSync(BADGES_JSON, 'utf8')); } catch {}
-  const featuredIds = new Set(existing.badges.filter((b) => b.featured).map((b) => b.id));
+  const featuredIds = new Set(existing.badges.filter((b) => b.featured && !b.autoFeaturedNew).map((b) => b.id));
+  const existingAutoFeaturedCount = existing.badges.filter((b) => b.autoFeaturedNew).length;
+  const featuredOrders = new Map(
+    existing.badges
+      .filter((b) => Number.isFinite(b.featuredOrder) && !b.autoFeaturedNew)
+      .map((b) => [b.id, Math.max(1, b.featuredOrder - existingAutoFeaturedCount)])
+  );
 
   const badges = [];
   for (const t of templates) {
@@ -149,11 +174,32 @@ async function main() {
       description: t.description || '',
       url: t.url || t.public_url || `https://www.credly.com/org/m365pnp/badge/${t.id}`,
       image: imagePath,
+      createdAt: t.created_at || null,
+      updatedAt: t.updated_at || null,
+      stateUpdatedAt: t.state_updated_at || null,
       featured: featuredIds.has(t.id),
+      ...(featuredOrders.has(t.id) ? { featuredOrder: featuredOrders.get(t.id) } : {}),
     });
   }
 
-  // Ensure exactly one badge is featured
+  badges.sort((a, b) => badgeNameSorter.compare(badgeDisplayName(a.name), badgeDisplayName(b.name)));
+
+  const newBadges = badges
+    .filter((badge) => isNewBadge(badge))
+    .sort((a, b) => badgePublishedMs(b) - badgePublishedMs(a));
+  newBadges.forEach((badge, index) => {
+    badge.featured = true;
+    badge.featuredOrder = index + 1;
+    badge.autoFeaturedNew = true;
+  });
+
+  const autoFeaturedIds = new Set(newBadges.map((badge) => badge.id));
+  badges.forEach((badge) => {
+    if (!badge.featured || autoFeaturedIds.has(badge.id) || !Number.isFinite(badge.featuredOrder)) return;
+    badge.featuredOrder += newBadges.length;
+  });
+
+  // Ensure at least one badge is featured.
   if (badges.length > 0 && !badges.some((b) => b.featured)) badges[0].featured = true;
 
   const output = {

@@ -418,7 +418,56 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
   background-image: url("https://pnp.github.io/images/side-bg-right.webp"), url("https://pnp.github.io/images/side-bg-left.webp");
 }
 
-.featured-badge { display: flex; justify-content: center; margin-bottom: 2rem; }
+.featured-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+.featured-badge__carousel {
+  display: grid;
+  grid-template-columns: 44px minmax(260px, 320px) 44px;
+  align-items: center;
+  gap: 0.75rem;
+}
+.featured-badge__stage {
+  display: grid;
+  justify-items: center;
+}
+.featured-badge__arrow {
+  width: 44px;
+  height: 44px;
+  border: 2px solid rgba(0, 84, 134, 0.25);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--dark-blue);
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 1;
+}
+.featured-badge__arrow:hover,
+.featured-badge__arrow:focus-visible {
+  border-color: var(--blue);
+  outline: none;
+}
+.featured-badge__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.55rem;
+}
+.featured-badge__dots button {
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--blue);
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.featured-badge__dots button.active {
+  background: var(--blue);
+}
 .catalog-link { max-width: 104rem; margin: 30px auto 0; }
 
 .badge-grid {
@@ -429,31 +478,78 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
   margin: 0 auto;
 }
 
+@property --badge-ring-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
 .badge-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: transparent;
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.18);
+  padding: 0;
+}
+.badge-card__inner {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 1rem;
-  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(15px);
-  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.18);
   padding: 1.25rem;
 }
-.featured-badge .badge-card {
+.badge-card--new {
+  padding: 2px;
+  background: conic-gradient(from var(--badge-ring-angle), transparent 0deg, transparent 270deg, rgba(73, 197, 177, 0.25) 300deg, #49c5b1 328deg, rgba(255, 255, 255, 0.95) 352deg, transparent 360deg);
+  box-shadow: 2px 3px 12px rgba(0, 0, 0, 0.18), 0 0 22px rgba(73, 197, 177, 0.24);
+  animation: badge-ring-spin 5s linear infinite;
+}
+.badge-card--new .badge-card__inner {
+  border-radius: calc(1rem - 2px);
+  background: rgba(255, 255, 255, 0.82);
+}
+.featured-badge .badge-card__inner {
   flex-direction: column;
   align-items: center;
   text-align: center;
   background: rgba(255, 255, 255, 0.9);
-  border: 2px solid var(--blue);
   padding: 2rem 2.5rem;
-  min-width: 260px;
-  max-width: 320px;
   gap: 0.75rem;
+}
+.featured-badge .badge-card {
+  border: 2px solid var(--blue);
+  width: min(320px, 100%);
+  min-height: 325px;
 }
 
 .badge-card h3 { margin: 0; font-size: clamp(1rem, 1.25vw, 1.25rem); line-height: 1.3; }
 .featured-badge .badge-card h3 { font-size: clamp(1.1rem, 1.4vw, 1.4rem); }
+.badge-card__label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin-top: 0.35rem;
+  height: 1.38rem;
+  padding: 0 0.62rem;
+  border: 1px solid rgba(73, 197, 177, 0.65);
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(73, 197, 177, 0.22), rgba(255, 255, 255, 0.82));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 6px 14px rgba(73, 197, 177, 0.16);
+  color: var(--dark-blue);
+  font-size: 0.66rem;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transform: translateY(0.03rem);
+}
 .badge-card .text-link { font-size: 0.78rem; text-decoration: none; }
 .badge-card .text-link:hover { text-decoration: underline; }
 
@@ -482,6 +578,10 @@ h3 { font-size: clamp(1.25rem, 1.65vw, 1.7rem); font-weight: 700; color: var(--d
 .featured-badge .badge-card__image {
   flex: 0 0 160px;
   width: 160px; height: 160px;
+}
+
+@keyframes badge-ring-spin {
+  to { --badge-ring-angle: 360deg; }
 }
 
 /* ── Footer ── */
@@ -555,6 +655,8 @@ footer {
   .glass-band { grid-template-columns: 1fr; }
   .faq-groups { grid-template-columns: 1fr; }
   .split { grid-template-columns: 1fr; gap: 1.5rem; }
+  .featured-badge__carousel { grid-template-columns: 36px minmax(0, 1fr) 36px; width: 100%; }
+  .featured-badge__arrow { width: 36px; height: 36px; font-size: 1.7rem; }
   .event-grid, .badge-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; }
   footer > div { justify-content: flex-start; }
@@ -562,7 +664,7 @@ footer {
 
 @media (max-width: 420px) {
   h1 { font-size: 2.5rem; }
-  .badge-card { padding: 1rem; }
+  .badge-card__inner { padding: 1rem; }
   .badge-card__monogram { flex-basis: 56px; width: 56px; height: 56px; font-size: 0.9rem; }
   .badge-card__image { flex-basis: 56px; width: 56px; height: 56px; }
 }
@@ -621,5 +723,6 @@ footer {
   h1 { animation: none; background-position: 0 0; }
   .button { transition: none; }
   .nav-toggle span { transition: none; }
+  .badge-card--new { animation: none; }
   .session-status--live::before { animation: none; }
 }
