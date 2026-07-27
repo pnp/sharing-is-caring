@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-20",
+  "updated": "2026-07-27",
   "organizationUrl": "https://www.credly.com/organizations/m365pnp/badges",
   "badges": [
     {
@@ -213,6 +213,19 @@
       "featured": false
     },
     {
+      "id": "715d2df2-cecd-47f9-a4a7-94312d2d38f1",
+      "name": "SharePoint Copilot Apps - Microsoft 365 & Power Platform Community 2026",
+      "description": "SharePoint Copilot Apps badge earners contributed to the Microsoft 365 & Power Platform Community - SharePoint Skills community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/sharepoint-copilot-apps-microsoft-365-power-platfor",
+      "image": "../assets/images/badges/715d2df2-cecd-47f9-a4a7-94312d2d38f1.png",
+      "createdAt": "2026-07-11T18:52:12.146Z",
+      "updatedAt": "2026-07-24T01:46:28.043Z",
+      "stateUpdatedAt": "2026-07-24T01:46:28.047Z",
+      "featured": true,
+      "featuredOrder": 1,
+      "autoFeaturedNew": true
+    },
+    {
       "id": "5be24ad9-4740-417b-90e2-e597e7e5ea1e",
       "name": "SharePoint Skills - Microsoft 365 & Power Platform Community 2026",
       "description": "SharePoint Skills badge earners contributed to the Microsoft 365 & Power Platform Community - SharePoint Skills community by completing at least one of the contributions below.",
@@ -221,9 +234,7 @@
       "createdAt": "2026-06-02T00:29:32.880Z",
       "updatedAt": "2026-06-23T03:31:10.776Z",
       "stateUpdatedAt": "2026-06-23T03:31:10.790Z",
-      "featured": true,
-      "featuredOrder": 1,
-      "autoFeaturedNew": true
+      "featured": false
     },
     {
       "id": "121cb3a3-05c1-49e7-a610-bf89520a0bc9",
