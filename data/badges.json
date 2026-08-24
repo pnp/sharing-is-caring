@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-24",
   "organizationUrl": "https://www.credly.com/organizations/m365pnp/badges",
   "badges": [
     {
@@ -45,7 +45,7 @@
       "updatedAt": "2026-01-13T16:18:51.909Z",
       "stateUpdatedAt": "2026-01-13T16:18:51.915Z",
       "featured": true,
-      "featuredOrder": 2
+      "featuredOrder": 1
     },
     {
       "id": "a20c2bd6-d3d7-48cc-9502-434179474762",
@@ -221,9 +221,7 @@
       "createdAt": "2026-07-11T18:52:12.146Z",
       "updatedAt": "2026-07-24T01:46:28.043Z",
       "stateUpdatedAt": "2026-07-24T01:46:28.047Z",
-      "featured": true,
-      "featuredOrder": 1,
-      "autoFeaturedNew": true
+      "featured": false
     },
     {
       "id": "5be24ad9-4740-417b-90e2-e597e7e5ea1e",
