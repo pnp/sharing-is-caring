@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-28",
   "organizationUrl": "https://www.credly.com/organizations/m365pnp/badges",
   "badges": [
     {
@@ -125,6 +125,17 @@
       "featured": false
     },
     {
+      "id": "715d2df2-cecd-47f9-a4a7-94312d2d38f1",
+      "name": "Copilot UX components - Microsoft 365 & Power Platform Community 2026",
+      "description": "Copilot UX components badge earners contributed to the Microsoft 365 & Power Platform Community - SharePoint Skills community by completing at least one of the contributions below.",
+      "url": "https://www.credly.com/org/m365pnp/badge/copilot-ux-components-microsoft-365-power-platform-",
+      "image": "../assets/images/badges/715d2df2-cecd-47f9-a4a7-94312d2d38f1.png",
+      "createdAt": "2026-07-11T18:52:12.146Z",
+      "updatedAt": "2026-09-23T16:19:11.834Z",
+      "stateUpdatedAt": "2026-07-24T01:46:28.047Z",
+      "featured": false
+    },
+    {
       "id": "445cb916-8fbc-4d4a-b615-0008cdde3b41",
       "name": "Modern Search - Microsoft 365 & Power Platform Community 2026",
       "description": "Modern Search badge earners contributed to the Microsoft 365 & Power Platform Community - Modern Script community by completing at least one of the contributions below.",
@@ -210,17 +221,6 @@
       "createdAt": "2026-02-27T03:49:15.884Z",
       "updatedAt": "2026-03-25T17:01:15.952Z",
       "stateUpdatedAt": "2026-02-27T03:50:11.507Z",
-      "featured": false
-    },
-    {
-      "id": "715d2df2-cecd-47f9-a4a7-94312d2d38f1",
-      "name": "SharePoint Copilot Apps - Microsoft 365 & Power Platform Community 2026",
-      "description": "SharePoint Copilot Apps badge earners contributed to the Microsoft 365 & Power Platform Community - SharePoint Skills community by completing at least one of the contributions below.",
-      "url": "https://www.credly.com/org/m365pnp/badge/sharepoint-copilot-apps-microsoft-365-power-platfor",
-      "image": "../assets/images/badges/715d2df2-cecd-47f9-a4a7-94312d2d38f1.png",
-      "createdAt": "2026-07-11T18:52:12.146Z",
-      "updatedAt": "2026-07-24T01:46:28.043Z",
-      "stateUpdatedAt": "2026-07-24T01:46:28.047Z",
       "featured": false
     },
     {
