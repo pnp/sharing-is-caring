@@ -9,6 +9,7 @@
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { URL } = require('url');
 
 // Load .env from repo root when running locally (no-op if file absent or vars already set)
@@ -108,6 +109,10 @@ function download(url, dest) {
   });
 }
 
+function fileHash(filePath) {
+  return crypto.createHash('sha256').update(fs.readFileSync(filePath)).digest('hex').slice(0, 12);
+}
+
 async function fetchAllTemplates() {
   const templates = [];
   let page = 1;
@@ -156,15 +161,24 @@ async function main() {
       const ext = path.extname(new URL(imageUrl).pathname) || '.png';
       const filename = `${t.id}${ext}`;
       const dest = path.join(IMAGES_DIR, filename);
-      // Skip download if file already exists (images don't change after creation)
-      if (!fs.existsSync(dest)) {
-        console.log(`  Downloading: ${t.name}`);
-        try { await download(imageUrl, dest); }
-        catch (e) { console.warn(`  Image download failed for ${t.name}: ${e.message}`); }
+
+      // Credly can replace the artwork for an existing badge template without
+      // changing its ID. Refresh every image and publish a content-based cache
+      // key so browsers/CDNs do not keep serving the previous artwork.
+      const tempDest = `${dest}.download-${process.pid}`;
+      console.log(`  Refreshing image: ${t.name}`);
+      try {
+        await download(imageUrl, tempDest);
+        fs.copyFileSync(tempDest, dest);
+      } catch (e) {
+        console.warn(`  Image download failed for ${t.name}: ${e.message}`);
+      } finally {
+        try { fs.unlinkSync(tempDest); } catch {}
       }
+
       if (fs.existsSync(dest)) {
         // Path relative to the recognition page (one level deep from site root)
-        imagePath = `../assets/images/badges/${filename}`;
+        imagePath = `../assets/images/badges/${filename}?v=${fileHash(dest)}`;
       }
     }
 
