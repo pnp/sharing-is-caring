@@ -45,7 +45,33 @@
       "updatedAt": "2026-09-29T14:53:45.282Z",
       "stateUpdatedAt": "2026-01-13T16:18:51.915Z",
       "featured": true,
-      "featuredOrder": 2
+      "featuredOrder": 8
+    },
+    {
+      "id": "38032375-e00c-45f8-95e0-82f3aee47487",
+      "name": "Community Royale - Parker Bond 2026 - Microsoft 365 & Power Platform Community",
+      "description": "Community Royale - Parker Bond - Microsoft 365 & Power Platform Community badge earners contributed to three or more Microsoft 365 & Power Platform Community initiatives within the months of October to December in the 2026 calendar year.",
+      "url": "https://www.credly.com/org/m365pnp/badge/community-royale-parker-bond-2026-microsoft-365-pow",
+      "image": "../assets/images/badges/38032375-e00c-45f8-95e0-82f3aee47487.png?v=eef928bf4d93",
+      "createdAt": "2026-10-09T01:42:25.290Z",
+      "updatedAt": "2026-10-09T02:38:48.404Z",
+      "stateUpdatedAt": "2026-10-09T02:38:48.407Z",
+      "featured": true,
+      "featuredOrder": 5,
+      "autoFeaturedNew": true
+    },
+    {
+      "id": "f358f218-0330-45b9-9a3d-75b4ea9bb4a6",
+      "name": "Contributions Are Forever - Parker Bond 2026 - Microsoft 365 & Power Platform Community",
+      "description": "Contributions Are Forever - Parker Bond - Microsoft 365 & Power Platform Community badge earners contributed to six or more Microsoft 365 & Power Platform Community initiatives within the months of October to December in the 2026 calendar year.",
+      "url": "https://www.credly.com/org/m365pnp/badge/contributions-are-forever-parker-bond-2026-microsof",
+      "image": "../assets/images/badges/f358f218-0330-45b9-9a3d-75b4ea9bb4a6.png?v=36f1857b3b2f",
+      "createdAt": "2026-10-09T01:44:08.264Z",
+      "updatedAt": "2026-10-09T02:38:51.175Z",
+      "stateUpdatedAt": "2026-10-09T02:38:51.179Z",
+      "featured": true,
+      "featuredOrder": 3,
+      "autoFeaturedNew": true
     },
     {
       "id": "a20c2bd6-d3d7-48cc-9502-434179474762",
@@ -145,7 +171,20 @@
       "updatedAt": "2026-10-09T02:37:25.903Z",
       "stateUpdatedAt": "2026-10-09T02:37:26.211Z",
       "featured": true,
-      "featuredOrder": 1,
+      "featuredOrder": 7,
+      "autoFeaturedNew": true
+    },
+    {
+      "id": "8d3870f5-c0c3-4360-90b0-71dba0cff65a",
+      "name": "License to Share - Parker Bond 2026 - Microsoft 365 & Power Platform Community",
+      "description": "License to Share - Parker Bond - Microsoft 365 & Power Platform Community badge earners contributed to one or more Microsoft 365 & Power Platform Community initiatives within the months of October to December in the 2026 calendar year.",
+      "url": "https://www.credly.com/org/m365pnp/badge/license-to-share-parker-bond-2026-microsoft-365-pow",
+      "image": "../assets/images/badges/8d3870f5-c0c3-4360-90b0-71dba0cff65a.png?v=b278fd2d48ac",
+      "createdAt": "2026-10-09T01:40:55.777Z",
+      "updatedAt": "2026-10-09T02:38:46.262Z",
+      "stateUpdatedAt": "2026-10-09T02:38:46.268Z",
+      "featured": true,
+      "featuredOrder": 6,
       "autoFeaturedNew": true
     },
     {
@@ -158,6 +197,32 @@
       "updatedAt": "2026-09-30T15:16:21.941Z",
       "stateUpdatedAt": "2026-02-19T02:25:50.030Z",
       "featured": false
+    },
+    {
+      "id": "5b80f90b-3683-4bbc-9975-38dd149561d4",
+      "name": "No Time To Debug - Parker Bond 2026 - Microsoft 365 & Power Platform Community",
+      "description": "No Time To Debug - Parker Bond - Microsoft 365 & Power Platform Community badge earners contributed to seven or more Microsoft 365 & Power Platform Community initiatives within the months of October to December in the 2026 calendar year.",
+      "url": "https://www.credly.com/org/m365pnp/badge/no-time-to-debug-parker-bond-2026-microsoft-365-pow",
+      "image": "../assets/images/badges/5b80f90b-3683-4bbc-9975-38dd149561d4.png?v=f469680ceb5f",
+      "createdAt": "2026-10-09T01:45:43.658Z",
+      "updatedAt": "2026-10-09T02:39:03.801Z",
+      "stateUpdatedAt": "2026-10-09T02:39:03.805Z",
+      "featured": true,
+      "featuredOrder": 1,
+      "autoFeaturedNew": true
+    },
+    {
+      "id": "5ab72e97-2a02-4a95-ac56-a3d13092cd41",
+      "name": "Parker Bond 2026 - Microsoft 365 & Power Platform Community - Bonus Badge",
+      "description": "Parker Bond - Microsoft 365 & Power Platform Community badge earners contributed to seven or more Microsoft 365 & Power Platform Community initiatives within the months of October to December in the 2026 calendar year, earning this bonus badge.",
+      "url": "https://www.credly.com/org/m365pnp/badge/parker-bond-2026-microsoft-365-power-platform-commu",
+      "image": "../assets/images/badges/5ab72e97-2a02-4a95-ac56-a3d13092cd41.png?v=8ed44118bc6e",
+      "createdAt": "2026-10-09T01:46:22.092Z",
+      "updatedAt": "2026-10-09T02:41:32.777Z",
+      "stateUpdatedAt": "2026-10-09T02:38:52.811Z",
+      "featured": true,
+      "featuredOrder": 2,
+      "autoFeaturedNew": true
     },
     {
       "id": "1d9aa5a4-7362-4c9f-9b03-c1dbcfd96799",
@@ -202,6 +267,19 @@
       "updatedAt": "2026-02-27T02:08:24.725Z",
       "stateUpdatedAt": "2026-02-27T02:08:24.996Z",
       "featured": false
+    },
+    {
+      "id": "f3bab0ff-9e47-4f9b-8568-a94822cb510a",
+      "name": "Quantum of Knowledge - Parker Bond 2026 - Microsoft 365 & Power Platform Community",
+      "description": "Quantum of Knowledge - Parker Bond - Microsoft 365 & Power Platform Community badge earners contributed to five or more Microsoft 365 & Power Platform Community initiatives within the months of October to December in the 2026 calendar year.",
+      "url": "https://www.credly.com/org/m365pnp/badge/quantum-of-knowledge-parker-bond-2026-microsoft-365",
+      "image": "../assets/images/badges/f3bab0ff-9e47-4f9b-8568-a94822cb510a.png?v=17fd0786ed53",
+      "createdAt": "2026-10-09T01:43:24.119Z",
+      "updatedAt": "2026-10-09T02:40:43.378Z",
+      "stateUpdatedAt": "2026-10-09T02:38:49.595Z",
+      "featured": true,
+      "featuredOrder": 4,
+      "autoFeaturedNew": true
     },
     {
       "id": "1b4a63e8-906c-42a7-9b14-58b6fd8e9fe2",
