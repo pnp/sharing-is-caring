@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061a22">
+  <meta name="description" content="Create a shareable Microsoft 365 & Power Platform Community recognition card.">
+  <title>Community Card Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="aurora aurora-one" aria-hidden="true"></div>
+  <div class="aurora aurora-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Community Card Studio home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>COMMUNITY</strong><small>CARD STUDIO</small></span>
+    </a>
+    <span class="prototype-pill"><i></i> Prototype · v0.1</span>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow"><span>✦</span> YOUR CONTRIBUTION. YOUR STORY.</p>
+      <h1>Turn your badge into<br><em>a card worth sharing.</em></h1>
+      <p class="intro-copy">Celebrate the expertise, generosity, and wonderfully human moments that make our community thrive.</p>
+      <div class="steps" aria-label="Everything you can do on this page">
+        <span><b>01</b> Choose</span><i></i><span><b>02</b> Personalize</span><i></i><span><b>03</b> Animate</span><i></i><span><b>04</b> Export &amp; share</span>
+      </div>
+    </section>
+
+    <section class="studio" aria-label="Badge card creator">
+      <div class="controls-panel">
+        <form id="card-form">
+          <details class="control-section" open>
+            <summary>
+              <span class="number">01</span>
+              <span class="summary-copy"><small>START HERE</small><strong>Badge, name &amp; theme</strong></span>
+              <span class="summary-chevron" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="section-content">
+              <label>Choose your badge</label>
+              <div class="badge-picker">
+                <button class="badge-option selected" type="button" aria-pressed="true">
+                  <img src="../../assets/images/badges/copilot-ux-components-2026.png" alt="Copilot UX components badge">
+                  <span><strong>Copilot UX components</strong><small>2026 · Community Badge</small></span>
+                  <b aria-hidden="true">✓</b>
+                </button>
+                <button class="badge-option soon" type="button" disabled>
+                  <span class="placeholder-badge">+</span>
+                  <span><strong>More badges</strong><small>Coming soon</small></span>
+                </button>
+              </div>
+
+              <div class="primary-fields">
+                <div>
+                  <label for="recipient-name">Your name <span>Required</span></label>
+                  <input id="recipient-name" maxlength="34" value="Alex Morgan" autocomplete="name" required>
+                </div>
+                <div>
+                  <label for="accent">Card theme</label>
+                  <select id="accent">
+                    <option value="aurora-circuit">Aurora Circuit</option>
+                    <option value="midnight-grid">Midnight Grid</option>
+                    <option value="sunset-chrome">Sunset Chrome</option>
+                    <option value="arctic-glass">Arctic Glass</option>
+                    <option value="electric-bloom">Electric Bloom</option>
+                    <option value="solar-flare">Solar Flare</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <details class="control-section">
+            <summary>
+              <span class="number">02</span>
+              <span class="summary-copy"><small>OPTIONAL</small><strong>Add more details</strong></span>
+              <span class="summary-note">Role, date &amp; post</span>
+              <span class="summary-chevron" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="section-content">
+          <label for="community-role">Community role <span>Optional</span></label>
+          <input id="community-role" maxlength="44" value="Community Contributor" placeholder="e.g. Community Contributor">
+
+          <label class="toggle-row" for="show-date">
+            <span><strong>Show earned date</strong><small>Off by default</small></span>
+            <input id="show-date" type="checkbox" role="switch">
+            <i aria-hidden="true"></i>
+          </label>
+          <div id="date-field" class="date-field" hidden>
+            <label for="earned-date">Date earned</label>
+            <input id="earned-date" type="date" value="2026-11-11" disabled>
+          </div>
+
+          <label for="message">Share message <span id="char-count">169 / 240</span></label>
+          <textarea id="message" maxlength="240" rows="4">Proud to have earned the Copilot UX components badge! Grateful to be building, contributing, and sharing with the Microsoft 365 & Power Platform Community. #SharingIsCaring</textarea>
+            </div>
+          </details>
+
+          <details class="control-section">
+            <summary>
+              <span class="number">03</span>
+              <span class="summary-copy"><small>OPTIONAL</small><strong>Add motion</strong></span>
+              <span class="summary-note">Still by default</span>
+              <span class="summary-chevron" aria-hidden="true">⌄</span>
+            </summary>
+            <div class="section-content">
+              <div class="motion-picker" role="radiogroup" aria-label="Animation preset">
+          <button class="motion-option selected" type="button" role="radio" aria-checked="true" data-motion="still">
+            <span class="motion-icon still-icon" aria-hidden="true"></span><strong>Still</strong><small>Classic card</small>
+          </button>
+          <button class="motion-option" type="button" role="radio" aria-checked="false" data-motion="holographic">
+            <span class="motion-icon holo-icon" aria-hidden="true"></span><strong>Holographic</strong><small>Light sweep</small>
+          </button>
+          <button class="motion-option" type="button" role="radio" aria-checked="false" data-motion="celebration">
+            <span class="motion-icon party-icon" aria-hidden="true"></span><strong>Celebration</strong><small>Confetti burst</small>
+          </button>
+          <button class="motion-option" type="button" role="radio" aria-checked="false" data-motion="aurora-flow">
+            <span class="motion-icon flow-icon" aria-hidden="true"></span><strong>Aurora</strong><small>Ambient glow</small>
+          </button>
+          <button class="motion-option" type="button" role="radio" aria-checked="false" data-motion="collector-reveal">
+            <span class="motion-icon reveal-icon" aria-hidden="true"></span><strong>Reveal</strong><small>Badge entrance</small>
+          </button>
+          <button class="motion-option" type="button" role="radio" aria-checked="false" data-motion="neon-pulse">
+            <span class="motion-icon pulse-icon" aria-hidden="true"></span><strong>Neon Pulse</strong><small>Glow &amp; breathe</small>
+          </button>
+          <button class="motion-option" type="button" role="radio" aria-checked="false" data-motion="orbit">
+            <span class="motion-icon orbit-icon" aria-hidden="true"></span><strong>Orbit</strong><small>Energy ring</small>
+          </button>
+          <button class="motion-option" type="button" role="radio" aria-checked="false" data-motion="signal-scan">
+            <span class="motion-icon scan-icon" aria-hidden="true"></span><strong>Signal Scan</strong><small>Digital sweep</small>
+          </button>
+              </div>
+              <div class="seasonal-label"><span>✦</span><div><strong>Seasonal animations</strong><small>Limited-edition motion for the moment</small></div></div>
+              <div class="motion-picker seasonal-picker" role="radiogroup" aria-label="Seasonal animation preset">
+          <button class="motion-option seasonal-option fall-option" type="button" role="radio" aria-checked="false" data-motion="fall-leaves">
+            <span class="motion-icon leaf-icon" aria-hidden="true"></span><strong>Falling Leaves</strong><small>Autumn edition</small>
+          </button>
+          <button class="motion-option seasonal-option winter-option" type="button" role="radio" aria-checked="false" data-motion="winter-snow">
+            <span class="motion-icon snow-icon" aria-hidden="true">✦</span><strong>Winter Snow</strong><small>Winter edition</small>
+          </button>
+              </div>
+            </div>
+          </details>
+        </form>
+      </div>
+
+      <div class="preview-panel">
+        <div class="preview-heading">
+          <div><p>LIVE PREVIEW</p><h2>Your community card</h2></div>
+          <button id="toggle-motion" class="preview-toggle" type="button" aria-pressed="false"><span aria-hidden="true">▶</span> Preview motion</button>
+        </div>
+        <div class="canvas-shell">
+          <canvas id="card-canvas" width="1200" height="1500" aria-label="Preview of your shareable badge card"></canvas>
+          <div class="shine" aria-hidden="true"></div>
+        </div>
+        <p class="privacy-note"><span>◈</span> Your details stay in this browser. Nothing is uploaded or stored.</p>
+        <div class="export-label"><span>04</span><div><b>EXPORT &amp; SHARE</b><small>Ready when you are</small></div></div>
+        <div class="actions">
+          <button id="download-png" class="primary-action" type="button"><span>↓</span> PNG</button>
+          <button id="download-jpg" class="secondary-action" type="button">JPG</button>
+          <button id="download-video" class="secondary-action video-action" type="button"><span>●</span> Video</button>
+          <button id="share-card" class="secondary-action share-action" type="button"><span>↗</span> Share card</button>
+          <button id="copy-message" class="secondary-action copy-action" type="button"><span>⧉</span> Copy post</button>
+        </div>
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Built with <b>♥</b> by the community, for the community.</span><span>#SharingIsCaring</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
